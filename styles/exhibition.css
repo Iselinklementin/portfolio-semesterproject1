@@ -1,0 +1,564 @@
+.header {
+  background: url(/images/desktop/exhibition-header.jpg);
+  background-repeat: no-repeat;
+  display: flex;
+  height: 300px;
+  width: 100%;
+  margin-top: 0;
+  position: absolute;
+  z-index: 0;
+  background-position: 100%;
+  background-size: cover;
+}
+
+.intro {
+  z-index: 1;
+  position: relative;
+  color: var(--white);
+  height: 130px;
+  margin-top: 14rem;
+}
+
+.intro h1 {
+  text-align: center;
+  width: 350px;
+  margin: auto;
+  line-height: 1.4;
+}
+
+.line-one {
+  font-weight: 600;
+  background-color: var(--coral);
+  padding: 0 1rem;
+}
+
+.line-two {
+  text-transform: uppercase;
+  font-size: 2.6rem;
+  font-weight: 800;
+  background-color: var(--dark-purple);
+  padding: 0 1rem;
+}
+
+/* ----------- SECTION ONE - ABOUT MUSEUM ----------- */
+
+.rocket {
+  position: absolute;
+  background-image: url(/images/desktop/rocket.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 270px;
+  width: 350px;
+  bottom: 100%;
+}
+
+.spaces {
+  position: relative;
+  text-align: center;
+  width: 350px;
+  margin: 16rem auto 2rem auto;
+  line-height: 1.6;
+  font-size: 1.2rem;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.link a {
+  color: var(--white);
+  background-color: var(--black);
+  line-height: 2.9;
+  height: 60px;
+  margin: 5px 15px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 10px;
+}
+
+.link a:hover {
+  background-color: var(--dark-purple);
+}
+
+/* ---------------- EXHIBITIONS ---------------- */
+
+.cosmo-img-desktop,
+.cosmo-desktop,
+.biology-pad,
+.biology-img-pad,
+.cosmo-pad,
+.guide p,
+.spaces h2 {
+  display: none;
+}
+
+.wrap {
+  margin: auto;
+}
+
+figure a {
+  text-decoration: none;
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.exhibitions {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem auto;
+  width: 340px;
+  justify-content: space-between;
+}
+
+.cosmo {
+  background-color: var(--dark-blue);
+  margin: auto;
+  width: 340px;
+  border-radius: 20px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.cosmo-img-mobile {
+  width: 340px;
+  height: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.cosmo h2 {
+  margin: 0;
+  padding: 10px 0 15px 0;
+  font-size: 1.2rem;
+}
+
+.biology,
+.robotics,
+.ecology,
+.evolution {
+  width: 165px;
+  margin: 5px 0 15px 0;
+  padding: 0;
+  border-radius: 20px;
+  text-align: center;
+  transition: filter 0.4s ease-in-out;
+}
+
+.biology h2,
+.robotics h2,
+.ecology h2,
+.evolution h2 {
+  margin: 0;
+  padding: 5px 0 10px 0;
+  font-size: 1.2rem;
+}
+
+.biology img,
+.robotics img,
+.ecology img,
+.evolution img {
+  width: 165px;
+  border-radius: 20px 20px 0 0;
+}
+
+.biology {
+  background-color: var(--purple);
+}
+
+.robotics {
+  background-color: var(--peach);
+}
+
+.ecology {
+  background-color: var(--yellow);
+}
+
+.evolution {
+  background-color: var(--pale-blue);
+}
+
+.evolution:hover,
+.ecology:hover,
+.biology:hover,
+.cosmo:hover,
+.robotics:hover {
+  filter: brightness(110%);
+  box-shadow: 2px 2px 5px rgb(188, 187, 187);
+}
+
+/* ---------------- GUIDED TOUR ---------------- */
+
+.guide {
+  position: relative;
+  width: 340px;
+  margin: auto;
+  height: 180px;
+  margin-bottom: 2rem;
+}
+
+.guide h2 {
+  position: relative;
+  padding-top: 3rem;
+  font-size: 2.2rem;
+  font-weight: 800;
+  width: 200px;
+  text-transform: uppercase;
+  line-height: 1;
+  z-index: 1;
+}
+
+.guide img {
+  position: absolute;
+  width: 180px;
+  top: -18px;
+  right: 20px;
+}
+
+.button-blue {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 0;
+}
+
+.blue-box {
+  position: absolute;
+  width: 288px;
+  height: 140px;
+  right: 0;
+  top: 20px;
+  background-color: var(--light-blue);
+  z-index: 0;
+  border-radius: 20px;
+}
+
+@media only screen and (min-width: 669px) {
+  .cosmo,
+  .biology-desktop {
+    display: none;
+  }
+
+  /* ---------------- ABOUT ---------------- */
+
+  .line-two {
+    font-size: 3.3rem;
+  }
+
+  .link {
+    margin-top: 1rem;
+    padding: 2rem;
+    max-width: 670px;
+  }
+
+  .link a {
+    font-size: 1.4rem;
+    line-height: 2.6;
+  }
+
+  /* ---------------- EXHIBITIONS ---------------- */
+
+  .exhibition-container {
+    margin: auto;
+    max-width: 1100px;
+  }
+
+  .wrap {
+    padding: 2rem;
+    max-width: 800px;
+  }
+
+  .exhibitions {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .cosmo-pad {
+    background-color: var(--dark-blue);
+    margin: 0;
+    transition: filter 0.4s ease-in-out;
+  }
+
+  .cosmo-pad:hover {
+    filter: brightness(110%);
+    box-shadow: 2px 2px 5px rgb(188, 187, 187);
+  }
+
+  .cosmo-pad,
+  .biology {
+    display: block;
+    width: 275px;
+    text-align: center;
+    border-radius: 20px;
+  }
+
+  .cosmo-img-pad,
+  .biology img {
+    display: flex;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .cosmo-pad h2,
+  .biology h2 {
+    margin: 0;
+    padding: 10px 0 15px 0;
+    font-size: 1.2rem;
+  }
+
+  .biology {
+    flex-direction: column;
+    margin: 0 0 0 20px;
+  }
+
+  .robotics,
+  .ecology,
+  .evolution {
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    margin: 40px 18px;
+  }
+
+  /* ---------------- GUIDED TOUR ---------------- */
+
+  .guide {
+    display: flex;
+    width: 100%;
+    padding: 0 4rem;
+    max-width: 730px;
+    height: 280px;
+    margin-bottom: 8rem;
+    align-items: center;
+  }
+
+  .guide h2 {
+    font-size: 3rem;
+    padding-top: 0;
+    margin-top: 2rem;
+  }
+
+  .guide p {
+    display: block;
+    width: 340px;
+    margin-left: 2.2rem;
+    font-size: 1.2rem;
+    z-index: 1;
+    padding-right: 2.5rem;
+  }
+
+  .guide img {
+    display: none;
+  }
+
+  .guide strong {
+    white-space: nowrap;
+  }
+
+  .blue-box {
+    display: flex;
+    width: 100%;
+    right: 5rem;
+    height: 100%;
+    top: 0;
+    max-width: 70%;
+    overflow: hidden;
+  }
+
+  .button-blue {
+    bottom: -10%;
+  }
+}
+
+@media only screen and (min-width: 910px) {
+  .biology-pad,
+  .cosmo-img-mobile {
+    display: none;
+  }
+
+  .link {
+    display: none;
+  }
+
+  /* ----------- ABOUT / EXHIBITION SPACES ----------- */
+
+  .rocket {
+    height: 200px;
+    top: 0;
+    overflow: hidden;
+  }
+
+  .spaces {
+    position: relative;
+    display: flex;
+    width: 850px;
+    height: 320px;
+    margin: auto;
+  }
+
+  .spaces h2 {
+    display: flex;
+    font-size: 2.4rem;
+    font-weight: 800;
+    width: 300px;
+    text-transform: uppercase;
+    line-height: 1;
+    margin: auto;
+    margin-top: 13rem;
+  }
+
+  .spaces-text-container {
+    width: 500px;
+    text-align: left;
+  }
+
+  .icons {
+    background-image: url(/images/desktop/exhibitions.svg);
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 60px;
+    width: 320px;
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .text-wrap {
+    width: 420px;
+    margin-left: 2rem;
+  }
+
+  /* ---------------- EXHIBITIONS ---------------- */
+
+  .cosmo-img-mobile,
+  .cosmo-pad,
+  .biology-hidden {
+    display: none;
+  }
+
+  .wrap {
+    display: flex;
+    padding: 4rem;
+    justify-content: center;
+    max-width: 1100px;
+    margin-top: -1.5rem;
+  }
+
+  .exhibitions {
+    display: flex;
+    width: 490px;
+    justify-content: space-evenly;
+  }
+
+  .cosmo-img-desktop {
+    display: flex;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .cosmo {
+    display: block;
+    width: 437px;
+    margin-top: 0;
+  }
+
+  .biology,
+  .robotics,
+  .ecology,
+  .evolution {
+    width: 204.8px;
+    margin: 0 0 10px 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 284px;
+  }
+
+  .ecology,
+  .evolution {
+    margin-top: 27px;
+  }
+
+  .biology h2,
+  .robotics h2,
+  .ecology h2,
+  .evolution h2,
+  .cosmo-desktop h2 {
+    padding-top: 10px;
+  }
+
+  .biology-desktop img {
+    display: flex;
+    width: 100%;
+  }
+
+  .biology-desktop,
+  .robotics img,
+  .ecology img,
+  .evolution img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+
+  /* ---------------- GUIDE ---------------- */
+
+  .guide {
+    max-width: 1100px;
+  }
+
+  .guide img {
+    display: flex;
+    width: 240px;
+    right: 70px;
+    top: 10%;
+  }
+}
+
+@media only screen and (min-width: 1040px) {
+  .intro {
+    height: 160px;
+  }
+  .intro h1 {
+    width: 500px;
+  }
+
+  .line-one {
+    font-size: 2rem;
+  }
+
+  .line-two {
+    font-size: 3.4rem;
+  }
+
+  .text-wrap {
+    margin-left: 6rem;
+  }
+
+  /* ---------------- GUIDE ---------------- */
+
+  .guide h2 {
+    font-size: 3.4rem;
+    margin-left: 2rem;
+  }
+
+  .guide img {
+    display: flex;
+    width: 310px;
+    right: 40px;
+    top: -10%;
+  }
+
+  .guide p {
+    margin-left: 4rem;
+    width: 400px;
+    padding-right: 1.5rem;
+  }
+}

@@ -1,0 +1,569 @@
+body {
+  text-align: center;
+}
+
+.desktop {
+  display: none;
+}
+
+.header-container {
+  position: relative;
+  width: 350px;
+  margin: auto;
+}
+
+.header,
+.astronaut {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 280px;
+  width: 280px;
+}
+
+.header {
+  background-image: url(/images/desktop/mars.png);
+  top: 60px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 330px;
+  width: 330px;
+}
+
+.astronaut {
+  background-image: url(/images/desktop/moonwalk.png);
+  top: 260px;
+  right: 0;
+}
+
+.intro {
+  position: relative;
+  width: 350px;
+  height: 500px;
+  margin: 3rem auto 1rem auto;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 2.6rem;
+  width: 14rem;
+  margin: 0 0 0 3rem;
+  line-height: 1.5;
+  color: var(--white);
+  background-color: var(--black);
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+.intro h2 {
+  width: 180px;
+  line-height: 1.4;
+  background-color: var(--yellow);
+  padding: 5px 1rem;
+  margin-bottom: 0.6rem;
+  text-transform: initial;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.intro p {
+  margin-top: 16rem;
+  font-weight: 700;
+  width: 140px;
+  margin-left: 12rem;
+}
+
+/* ---------------- OPENING HOURS ---------------- */
+
+.opening-hours h2,
+.about-us h2 {
+  color: var(--white);
+  background-color: var(--black);
+  line-height: 2.5;
+  height: 50px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  margin: 2.5rem auto 1rem auto;
+  max-width: 810px;
+}
+
+.table-background {
+  background-color: var(--light-blue);
+}
+
+.opening-hours {
+  margin: 0 auto;
+  padding: 0 2rem;
+  max-width: 810px;
+}
+
+table {
+  margin: auto;
+  text-align: left;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 8px 8px 8px 35px;
+}
+
+/* ----------- PROGRAM / TICKETS ----------- */
+
+.program-wrap {
+  padding: 0 2rem;
+  max-width: 810px;
+}
+
+.program {
+  background-image: url(/images/desktop/visit-program.jpg);
+  height: 217px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 2rem auto 0 auto;
+  border-radius: 10px;
+  background-position: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: filter 0.4s ease-in-out;
+}
+
+.program:hover {
+  filter: brightness(110%);
+  box-shadow: 2px 2px 5px rgb(188, 187, 187);
+}
+
+a {
+  text-decoration: none;
+}
+
+.program h2 {
+  margin: 0;
+  text-align: left;
+  padding-left: 1rem;
+  font-size: 2.4rem;
+  font-weight: 800;
+  width: 240px;
+}
+
+.program a:first-of-type {
+  color: var(--white);
+}
+
+.program a:last-of-type {
+  color: var(--light-blue);
+  line-height: 1.2;
+}
+
+/* ----------- EXHIBITION SPACES ----------- */
+
+.exhibitions {
+  margin: 0 auto;
+  padding: 2rem;
+  height: 260px;
+  transition: filter 0.4s ease-in-out;
+}
+
+.exhibition-background {
+  background-image: url(/images/desktop/exhibition-spaces.jpg);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 80%;
+  border-radius: 10px 10px 0 0;
+}
+
+.exhibitions:hover {
+  filter: brightness(110%);
+}
+
+.exhibitions h2 {
+  position: relative;
+  color: var(--white);
+  background-color: var(--black);
+  line-height: 3;
+  margin: 0;
+  border-radius: 0 0 10px 10px;
+}
+
+/* -------------- SHOP & FOOD -------------- */
+
+.container {
+  border-radius: 10px;
+  max-width: 810px;
+  height: 220px;
+  margin: 2rem auto;
+  transition: background 200ms ease-in-out, transform 100ms ease;
+}
+
+.food:hover,
+.shop:hover {
+  background-color: var(--peach);
+}
+
+.shop-food-map {
+  padding: 0 2rem;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  color: var(--white);
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.box-text {
+  text-align: left;
+  width: 200px;
+  line-height: 1.2;
+  padding: 0 10px 0 0;
+}
+
+.box-text h2 {
+  font-size: 2rem;
+  margin: 0.5rem 0 0 0;
+  font-weight: 800;
+}
+
+.box-text p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  letter-spacing: -0.1px;
+}
+
+.illustration {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 120px;
+  height: 220px;
+}
+
+.shop {
+  background-color: var(--green);
+  margin-top: 4.5rem;
+}
+
+.food {
+  background-color: var(--yellow);
+}
+
+.rocket {
+  background-image: url(/images/desktop/rocket.png);
+}
+
+.fruit {
+  background-image: url(/images/desktop/pear.png);
+}
+
+/* ---------------- ABOUT US ---------------- */
+
+.about-wrap {
+  padding: 0 2rem;
+  max-width: 810px;
+}
+
+.about-us {
+  width: 100%;
+  margin: auto;
+}
+
+.about-us p:first-of-type {
+  line-height: 1.5;
+  font-size: 1.2rem;
+  margin: 2rem 0;
+}
+
+.about-us p {
+  letter-spacing: -0.2px;
+}
+
+.about-us figure {
+  margin: 2rem 0;
+}
+
+.about-us img {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+}
+
+.img-contain {
+  max-width: 810px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.img-contain img {
+  width: 50%;
+  height: 100%;
+  padding: 10px;
+}
+
+.map {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  width: 311px;
+  margin: 2rem auto;
+  padding-top: 6px;
+}
+
+iframe {
+  width: 300px;
+  height: 300px;
+}
+
+.info-container {
+  display: flex;
+  text-align: left;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.info-container figure {
+  margin: 1rem;
+}
+
+.info-text h2 {
+  margin-bottom: 0;
+  font-size: 1rem;
+  text-transform: initial;
+}
+
+.info-text p {
+  margin-top: 0;
+  margin-bottom: 0.2rem;
+  width: 120px;
+  font-size: 0.8rem;
+}
+
+.info-text p:last-child {
+  margin-bottom: 1rem;
+}
+.museum-logo {
+  height: 80px;
+}
+
+@media only screen and (min-width: 768px) {
+  .header-container {
+    width: 800px;
+  }
+
+  .header {
+    height: 420px;
+    width: 420px;
+  }
+
+  .astronaut {
+    height: 320px;
+    top: 180px;
+  }
+
+  .intro {
+    width: 600px;
+    height: 440px;
+    margin: 3rem auto 1rem auto;
+  }
+
+  h1 {
+    font-size: 3.8rem;
+    width: 350px;
+  }
+
+  .intro h2 {
+    margin-top: 8rem;
+    width: 365px;
+    font-size: 1.5rem;
+    line-height: 2;
+    letter-spacing: -0.4px;
+  }
+
+  .intro p {
+    margin-top: 13rem;
+    margin-left: 28rem;
+  }
+
+  /* ----------- OPENING HOURS / PROGRAM ----------- */
+
+  .flex-container-top {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem auto 1rem auto;
+    width: 730px;
+    padding: 0 1rem;
+  }
+
+  .opening-hours {
+    padding: 0;
+    margin: 0;
+  }
+
+  .opening-hours h2 {
+    margin-top: 0;
+  }
+
+  .program-wrap {
+    padding: 0;
+  }
+
+  .program {
+    width: 330px;
+    height: 278px;
+    margin: 0 0 0 10px;
+    background-position: 80%;
+  }
+
+  .program h2 {
+    padding-left: 1rem;
+  }
+
+  th,
+  td {
+    padding: 4px 4px 4px 35px;
+  }
+
+  table {
+    width: 360px;
+  }
+
+  /* -------------- SHOP & FOOD -------------- */
+
+  .shop-food-map {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .container {
+    margin: unset;
+  }
+
+  .shop,
+  .food {
+    margin: 5rem 10px 0 10px;
+    width: -moz-available;
+  }
+
+  .about-wrap {
+    max-width: unset;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .mobile {
+    display: none;
+  }
+
+  .exhibitions {
+    padding: 0 1rem;
+    max-width: 810px;
+  }
+
+  /* ----------- OPENING HOURS / PROGRAM ----------- */
+
+  .flex-container-top {
+    width: 810px;
+    margin: 1rem auto 3rem auto;
+  }
+
+  .program {
+    width: 390px;
+    background-position: 100%;
+  }
+
+  /* -------------- SHOP / FOOD / ABOUT -------------- */
+
+  .shop-food-map {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .container {
+    margin: 10px;
+    height: 270px;
+  }
+
+  .shop-food-about-flex {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0 1rem;
+    margin: 7rem auto 3rem auto;
+    width: 810px;
+    justify-content: space-between;
+  }
+
+  .shop,
+  .food {
+    width: unset;
+  }
+
+  .box {
+    padding: 2rem 0 2rem 0;
+  }
+
+  .desktop {
+    display: block;
+    width: 310px;
+  }
+
+  .about-wrap {
+    padding: 0;
+    text-align: left;
+    width: 360px;
+  }
+
+  .about-us h2 {
+    background-color: transparent;
+    color: var(--black);
+    margin: 10px 0 0 0;
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: 0;
+  }
+
+  .about-us p {
+    letter-spacing: 0;
+  }
+
+  .about-us p:first-of-type {
+    font-weight: 700;
+    letter-spacing: 0;
+  }
+
+  /* -------------- MAP -------------- */
+
+  .info-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .info-container figure {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .museum-logo {
+    height: 50px;
+  }
+
+  .info-text p {
+    margin: auto;
+    padding: 5px;
+    width: 290px;
+  }
+
+  .map {
+    margin-top: 10px;
+  }
+}

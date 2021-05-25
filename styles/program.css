@@ -1,0 +1,944 @@
+.head {
+  background-image: url(/images/desktop/skull-head.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 250px;
+  width: 250px;
+  margin: 4rem auto 0 auto;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 2.6rem;
+  width: 20rem;
+  margin: auto;
+  line-height: 1.5;
+  color: var(--white);
+  text-align: center;
+}
+
+.line-one {
+  background-color: var(--coral);
+  padding: 0 1rem;
+}
+
+.line-two {
+  background-color: var(--dark-blue);
+  padding: 0 2rem;
+}
+
+/* ---------------- PROGRAM ---------------- */
+
+.program {
+  max-width: 350px;
+  margin: auto;
+}
+
+.program h2,
+.calendar h2 {
+  color: var(--white);
+  background-color: var(--black);
+  text-transform: uppercase;
+  line-height: 2.5;
+  height: 50px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  margin: 2.5rem auto 0 auto;
+  text-align: center;
+  max-width: 350px;
+}
+
+.date-header-mobile {
+  background-color: var(--coral);
+  background-image: url(/images/mobile/robotics-calendar.jpg);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: right;
+  height: 120px;
+  max-width: 350px;
+  margin: -1rem auto 2rem auto;
+}
+
+.date-header-desktop,
+.act-pic1-container,
+.act-pic2-container,
+#contact {
+  display: none;
+}
+
+.program h3:nth-child(3),
+.program h3:nth-child(5) {
+  color: var(--coral);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+table {
+  font-size: 1rem;
+  text-align: left;
+  width: 350px;
+  border-collapse: collapse;
+}
+
+tr {
+  border-top: solid;
+  border-width: 1px;
+}
+
+tr:first-child {
+  border-top: none;
+}
+
+th {
+  width: 100px;
+  padding: 8px;
+}
+
+th span {
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+td {
+  text-align: right;
+  width: 110px;
+  padding: 8px;
+}
+
+/* HEADER IN BOXES */
+
+.date-header-mobile h3,
+.activities h2 {
+  text-transform: uppercase;
+  color: var(--white);
+  font-size: 1.7rem;
+  width: 155px;
+  line-height: 1.1;
+}
+
+.date-header-mobile h3 {
+  padding: 16px 0 0 16px;
+}
+
+.activities h2 {
+  padding: 22px 0 0 16px;
+}
+
+/* ---------------- CALENDAR ---------------- */
+
+.calendar {
+  margin: auto;
+  width: 350px;
+  text-align: center;
+  background-color: rgb(231, 228, 228);
+}
+
+ol,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.month {
+  display: inline-flex;
+  font-size: 1.2rem;
+  font-weight: 700;
+  width: 300px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.fas {
+  cursor: pointer;
+}
+
+.days-week,
+.everyday {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.days-week {
+  padding-bottom: 5px;
+}
+
+.day {
+  border: solid 1px var(--white);
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+
+.day:hover {
+  background-color: var(--coral);
+  color: var(--white);
+}
+
+.weekends {
+  background-color: rgb(52, 51, 51);
+}
+
+li span {
+  color: var(--white);
+}
+
+.date {
+  background-color: var(--coral);
+  font-weight: 700;
+}
+
+/* ---------------- TICKETS HEADER ---------------- */
+
+.tickets-header {
+  margin: auto;
+  width: 350px;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.tickets-header h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.tickets-header p {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+/* ---------------- TICKETS ---------------- */
+
+.tickets-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: stretch;
+  width: 350px;
+  margin: auto;
+  text-align: center;
+  color: var(--white);
+  padding-bottom: 0.8rem;
+  border-bottom: 4px var(--yellow) solid;
+}
+
+.ticket {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  background-color: black;
+  width: 165px;
+  padding-bottom: 1.5rem;
+}
+
+.ticket:hover {
+  filter: brightness(105%);
+  box-shadow: 2px 2px 5px rgb(188, 187, 187);
+}
+
+.single-ticket:hover,
+.group-ticket:hover {
+  filter: brightness(110%);
+  box-shadow: 2px 2px 5px rgb(188, 187, 187);
+}
+
+.ticket img {
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+}
+
+.ticket figure {
+  margin: 0;
+  padding: 0;
+}
+
+.ticket h3 {
+  text-transform: uppercase;
+  margin: auto;
+}
+
+.ticket p {
+  font-size: 0.8rem;
+  margin: 0.5rem auto;
+}
+
+.discount {
+  position: absolute;
+  background-color: var(--yellow);
+  color: var(--black);
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: -0.8px;
+  width: 100%;
+  top: 35%;
+}
+
+.booking {
+  background-color: var(--dark-purple);
+}
+
+.guided-tour {
+  background-color: var(--light-blue);
+  color: var(--black);
+}
+
+.info-text {
+  margin: 2rem auto;
+  letter-spacing: -0.3px;
+  width: 139px;
+}
+
+.buy {
+  padding: 0;
+  margin-top: -2rem;
+}
+
+.buy form {
+  margin-top: 1.3rem;
+}
+
+#guide-headline {
+  padding-top: 6rem;
+}
+
+.guided-img {
+  position: absolute;
+  background-image: url(/images/desktop/guided-tour-robot.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+  background-size: contain;
+  height: 150px;
+  width: 150px;
+  top: -1rem;
+  right: 5%;
+}
+
+.booking p {
+  max-width: 120px;
+  margin: 0.5rem auto;
+}
+
+.group-ticket p:nth-child(5) {
+  text-transform: uppercase;
+  color: var(--yellow);
+  font-weight: 600;
+  width: 100px;
+  margin: 0 auto;
+}
+
+.group-ticket p {
+  padding: 0;
+}
+
+.group-ticket h3 {
+  padding-top: 1rem;
+}
+
+.price {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+/* ---------------- QUANTITY ---------------- */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  background-clip: padding-box;
+  padding: 0;
+  margin: 0;
+}
+
+input.plus,
+input.minus {
+  padding: 9px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.minus,
+.plus,
+.input-text {
+  height: 34px;
+  width: 35px;
+  background-color: var(--white);
+  border: 1px solid #efefef;
+  cursor: pointer;
+  text-align: center;
+  margin: 0rem auto 1.4rem auto;
+}
+
+/* SUBMIT BUTTONS */
+
+.submit-btn,
+a.submit-btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--black);
+  background-color: var(--white);
+  letter-spacing: -0.4px;
+  border: none;
+  margin: auto;
+  height: 3rem;
+  width: 9rem;
+  border-radius: 2rem;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 12px;
+  cursor: pointer;
+  transition: background 200ms ease-in-out, transform 100ms ease;
+}
+
+a.submit-btn {
+  margin-top: 2rem;
+}
+
+.submit-btn:hover,
+a.submit-btn:hover {
+  background-color: var(--yellow);
+}
+
+.guide-btn:hover {
+  background-color: var(--dark-blue);
+  color: var(--white);
+}
+
+.submit-btn:focus,
+a.submit-btn:focus {
+  border: 2px solid var(--coral);
+}
+
+/* ---------------- ACTIVITES FOR KIDS ---------------- */
+
+.activities-wrap {
+  max-width: 350px;
+  margin: 2rem auto 4rem auto;
+  color: var(--white);
+}
+
+.activities {
+  background-color: var(--peach);
+  background-image: url(/images/mobile/program-solar-system.jpg);
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: 120%;
+  border-radius: 20px;
+  height: 135px;
+}
+
+.links {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem auto;
+  text-align: center;
+  max-width: 350px;
+}
+
+.kids-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  line-height: 2.4;
+  height: 40px;
+  margin: 5px 0;
+  border-radius: 20px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: var(--white);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.kids-link .fas {
+  font-size: 1.4rem;
+}
+
+.links .kids-link:first-child {
+  background-color: var(--peach);
+}
+
+.links .kids-link:nth-child(2) {
+  background-color: var(--coral);
+}
+
+.links .kids-link:nth-child(3) {
+  background-color: var(--dark-blue);
+}
+
+.links .kids-link:first-child:hover {
+  background-color: #f49578;
+}
+
+.links .kids-link:nth-child(2):hover {
+  background-color: #f4626b;
+}
+
+.links .kids-link:nth-child(3):hover {
+  background-color: #105a96;
+}
+
+@media only screen and (min-width: 768px) {
+  .grid {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-rows: auto;
+    padding: 0 2rem;
+    justify-content: center;
+  }
+
+  .intro {
+    grid-row: 1;
+    grid-column: 1 / span 2;
+    position: relative;
+    display: flex;
+    margin: 2rem auto;
+  }
+
+  .head {
+    background-position: left;
+    z-index: 1;
+    width: 600px;
+    height: 340px;
+    margin-top: 1.2rem;
+  }
+
+  .intro h1 {
+    position: absolute;
+    text-align: left;
+    font-size: 3.3rem;
+    width: 400px;
+    top: 24%;
+    right: 0%;
+  }
+
+  .line-one,
+  .line-two {
+    padding: 0 3.5rem;
+  }
+
+  /* ---------------- PROGRAM ---------------- */
+
+  .date-header-mobile {
+    max-width: 100%;
+    background-size: 60%;
+  }
+
+  .program h2,
+  .calendar h2 {
+    margin: auto;
+    max-width: 600px;
+  }
+
+  .program {
+    grid-row: 2;
+    grid-column: 2;
+    margin: 0;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  th,
+  td {
+    width: initial;
+    padding: 5px;
+  }
+
+  /* ---------------- CALENDAR ---------------- */
+
+  .calendar {
+    grid-row: 2;
+    grid-column: 1;
+    margin: 0;
+    width: unset;
+  }
+
+  .month {
+    margin-top: 1rem;
+  }
+
+  .days-week,
+  .everyday {
+    height: 50px;
+    grid-gap: 10px;
+    padding: 10px;
+  }
+
+  /* ---------------- TICKETS ---------------- */
+
+  .tickets-header {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+    width: auto;
+  }
+
+  .tickets-header h2 {
+    font-size: 2.5rem;
+  }
+
+  .price,
+  .tickets-header p {
+    font-size: 1.4rem;
+  }
+
+  .tickets-wrap {
+    flex-wrap: nowrap;
+    grid-column: 1 / span 2;
+    grid-row: 4;
+    padding-bottom: 3rem;
+    width: 700px;
+  }
+
+  .ticket {
+    margin: 5px;
+  }
+
+  .ticket p {
+    font-size: 1rem;
+  }
+
+  .discount {
+    top: 27%;
+    line-height: 2;
+  }
+
+  .ticket h3 {
+    font-size: 1.2rem;
+    max-width: 130px;
+  }
+
+  .booking p {
+    padding-bottom: 3rem;
+    margin-top: 0.3rem;
+  }
+
+  .single-ticket .price {
+    padding-bottom: 2rem;
+  }
+
+  .group-ticket h3 {
+    margin-top: 1rem;
+  }
+
+  .group-ticket p:nth-child(5) {
+    margin: 0 auto 25px auto;
+    padding: 8px 0;
+  }
+
+  a.submit-btn {
+    margin: 0 auto;
+  }
+
+  .buy {
+    padding: 0;
+    margin-top: 1rem;
+  }
+
+  .buy form {
+    margin-top: 1.3rem;
+  }
+
+  .info-text {
+    padding-top: 2rem;
+    margin-bottom: 0;
+  }
+
+  .guided-img {
+    width: 200px;
+    height: 170px;
+    right: -18px;
+  }
+
+  /* ---------------- ACTIVITIES FOR KIDS ---------------- */
+
+  .extra-activities {
+    grid-column: 1 / span 2;
+    grid-row: 5;
+    display: flex;
+  }
+
+  .activities-wrap {
+    display: inline-flex;
+    flex-direction: row;
+    max-width: 700px;
+  }
+
+  .activities {
+    background-image: none;
+    height: 160px;
+    width: 266px;
+    border-radius: 10px;
+  }
+
+  .activities h2 {
+    margin: auto;
+    padding: 25px 0;
+    text-align: center;
+    line-height: 1.3;
+  }
+
+  .kids-link {
+    margin: 4px 0;
+    padding: 0 1rem;
+  }
+
+  .links {
+    margin: 5px;
+  }
+
+  .act-pic1-container {
+    display: flex;
+    background-image: url(/images/desktop/program-solar-system.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    border-radius: 10px;
+    margin: 0 10px 0 20px;
+  }
+
+  .act-pic2-container {
+    display: flex;
+    background-image: url(/images/desktop/human-gyroscop.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    margin: 0 10px;
+    border-radius: 10px;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .date-header-mobile {
+    display: none;
+  }
+
+  .intro {
+    grid-row: 1;
+    grid-column: 1 / span 3;
+  }
+
+  .date-header-desktop {
+    display: flex;
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    background-color: var(--coral);
+    background-image: url(/images/desktop/robotics-calendar.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center bottom;
+  }
+
+  .date-header-desktop h3 {
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white);
+    font-size: 2.2rem;
+    width: 210px;
+    line-height: 1.1;
+    font-weight: 800;
+    margin: 9rem auto;
+  }
+
+  /* ---------------- CALENDAR ---------------- */
+
+  .calendar {
+    grid-row: 2;
+    grid-column: 2;
+    width: 430px;
+    margin: 0 0 0 -1.3rem;
+  }
+
+  /* ---------------- PROGRAM ---------------- */
+
+  .program {
+    grid-row: 2;
+    grid-column: 3;
+    width: 300px;
+  }
+
+  /* ---------------- TICKETS ---------------- */
+
+  .tickets-header {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  .tickets-wrap {
+    grid-column: 1 / span 3;
+    grid-row: 4;
+    width: unset;
+  }
+
+  .discount {
+    top: 34%;
+  }
+
+  .ticket {
+    width: 200px;
+  }
+
+  .group-ticket h3 {
+    margin-top: 0;
+  }
+
+  .guided-img {
+    display: none;
+  }
+
+  .guided-tour {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    width: 315px;
+  }
+
+  .buy,
+  .info-text {
+    margin-bottom: 1rem;
+  }
+
+  .guided-tour p:first-of-type {
+    width: 190px;
+    padding-left: 5px;
+    font-size: 1rem;
+  }
+
+  .info-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+
+  #guide-headline {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1;
+    max-width: initial;
+    padding-left: 3.5rem;
+    padding-top: 6rem;
+  }
+
+  .info-text p:first-of-type {
+    width: 144px;
+    margin: 0;
+    letter-spacing: -0.4px;
+    text-align: left;
+    line-height: 1.3;
+    padding-bottom: 0.7rem;
+  }
+
+  #contact {
+    letter-spacing: 0.5px;
+    display: block;
+    font-weight: 700;
+    line-height: 1.2;
+    padding: 5px;
+    padding-bottom: 0;
+    margin: 0;
+    text-align: left;
+  }
+
+  #contact a {
+    font-weight: normal;
+    letter-spacing: -0.2px;
+    color: var(--black);
+    line-height: 2;
+    text-decoration: none;
+    border-bottom: thin solid;
+    padding-bottom: 3px;
+  }
+
+  #contact a:hover {
+    color: var(--coral);
+    font-weight: 700;
+  }
+
+  .buy {
+    text-align: center;
+    max-width: 170px;
+    margin-top: 19.7rem;
+  }
+
+  .buy p:first-of-type {
+    width: 160px;
+  }
+
+  .buy form {
+    margin-top: 1rem;
+  }
+
+  .guide-btn {
+    margin-top: 0.5rem;
+  }
+
+  .sitting-skeleton {
+    position: absolute;
+    display: flex;
+    background-image: url(/images/desktop/skeleton-sitting.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+    min-height: 360px;
+    width: 100%;
+    top: -10rem;
+    right: 0%;
+    overflow: hidden;
+  }
+
+  /* ---------------- ACTIVITIES FOR KIDS ---------------- */
+
+  .extra-activities {
+    grid-column: 1 / span 3;
+    grid-row: 5;
+  }
+
+  .activities-wrap {
+    max-width: 950px;
+  }
+
+  .activities {
+    height: 200px;
+    width: 340px;
+  }
+
+  .activities h2 {
+    padding: 45px 0;
+  }
+
+  .links {
+    max-width: 400px;
+  }
+
+  .act-pic1-container {
+    width: 280px;
+  }
+
+  .act-pic2-container {
+    width: 350px;
+  }
+}
