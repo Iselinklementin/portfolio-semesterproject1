@@ -1,3 +1,8 @@
+/* TEST */
+.test {
+  margin: 5rem;
+}
+
 .head {
   background-image: url(/images/desktop/skull-head.png);
   background-repeat: no-repeat;
@@ -84,7 +89,7 @@ table {
 }
 
 tr {
-  border-top: solid;
+  /* border-top: solid; */
   border-width: 1px;
 }
 
@@ -134,14 +139,15 @@ td {
   width: 350px;
   text-align: center;
   background-color: rgb(231, 228, 228);
+  padding: 20px;
 }
 
-ol,
+/* ol,
 li {
   padding: 0;
   margin: 0;
   list-style: none;
-}
+} */
 
 .month {
   display: inline-flex;
@@ -156,15 +162,15 @@ li {
   cursor: pointer;
 }
 
-.days-week,
+/* .days-week,
 .everyday {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-}
+} */
 
-.days-week {
+/* .days-week {
   padding-bottom: 5px;
-}
+} */
 
 .day {
   border: solid 1px var(--white);
@@ -179,15 +185,19 @@ li {
 
 .weekends {
   background-color: rgb(52, 51, 51);
+  color: white;
 }
 
-li span {
-  color: var(--white);
+.todays-date {
+  background-color: var(--yellow);
+  color: white;
+  font-weight: 700;
 }
 
-.date {
+.chosen-date {
   background-color: var(--coral);
   font-weight: 700;
+  color: white;
 }
 
 /* ---------------- TICKETS HEADER ---------------- */
@@ -349,6 +359,91 @@ li span {
   text-transform: uppercase;
   font-size: 1.2rem;
   margin-bottom: 1rem;
+}
+
+/* ---------------- MODAL ---------------- */
+
+.modal {
+  z-index: 10;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition: all 0.35s ease-in;
+  display: none;
+}
+
+.buttons-container-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 2rem auto;
+}
+
+#modal-button,
+.modal-button {
+  margin: 0.3rem;
+  width: 16rem;
+}
+
+.modal-dialog {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  width: 80vw;
+  background: var(--white);
+  cursor: default;
+}
+
+#header-modal {
+  min-height: 40px;
+  height: 100%;
+  width: 100%;
+  border: red solid thin;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: var(--white-color);
+  border: blue solid thin;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+}
+
+.modal-content>p {
+  padding: 0 10px 0 5px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.modal-content span {
+  font-weight: bold;
+}
+
+.modal-header-text {
+  color: black;
 }
 
 /* ---------------- QUANTITY ---------------- */

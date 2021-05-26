@@ -1,278 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content= "See what we have in the program, find tickets for an event or read about our activities!" />
-    <meta name="keywords" content="science, children, experiments, activity, learning, school activity, researchers, cosmology, ecology, robot, ai, evolution, medicine, program, tickets">
+    <meta name="description"
+        content="See what we have in the program, find tickets for an event or read about our activities!" />
+    <meta name="keywords"
+        content="science, children, experiments, activity, learning, school activity, researchers, cosmology, ecology, robot, ai, evolution, medicine, program, tickets">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap"
+        rel="stylesheet">
     <link href="styles/styles.css" rel="stylesheet" />
     <link href="styles/program.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/9b8ac118a8.js" crossorigin="anonymous"></script>
     <title>Program & Tickets - Community Science Museum</title>
 </head>
+
 <body>
-<header>
-  <a href="index.html"><img src="/images/logo-some/logo-header-desktop.svg" alt="Community Science Museum logo" class="header-logo"></a>
-    <section>
-        <label class="search-label" for="search-menu" aria-label="search"><i class="fas fa-search"></i></label>
-        <input type="checkbox" id="search-menu" />
-        <form id="searchbar">
-            <div class="search-wrap">
-            <input type="search" placeholder="Search.." aria-label="Search through site">
-            <button type="submit"><span class="arrow-wrap"><span class="arrow" aria-label="Press search"></span></span></button>
-            </div>
-        </form>
+    <header>
+        <a href="index.html"><img src="/images/logo-some/logo-header-desktop.svg" alt="Community Science Museum logo"
+                class="header-logo"></a>
+        <section>
+            <label class="search-label" for="search-menu" aria-label="search"><i class="fas fa-search"></i></label>
+            <input type="checkbox" id="search-menu" />
+            <form id="searchbar">
+                <div class="search-wrap">
+                    <input type="search" placeholder="Search.." aria-label="Search through site">
+                    <button type="submit"><span class="arrow-wrap"><span class="arrow"
+                                aria-label="Press search"></span></span></button>
+                </div>
+            </form>
         </section>
         <label class="hamburger-label" for="hamburger-menu" aria-label="menu"><i class="fas fa-bars"></i></label>
-    <input type="checkbox" id="hamburger-menu" />
-<nav>
-  <ul>
-    <li><a class="hover-effect" href="exhibition.html">Exhibitions</a></li>
-    <li><a class="hover-effect active" href="program.html">Program</a></li>
-    <li><a class="hover-effect" href="visit.html">Visit</a></li>
-    <li><a class="hover-effect" href="get-involved.html">Get involved</a></li>
- </ul>
-</nav>
-</header>
+        <input type="checkbox" id="hamburger-menu" />
+        <nav>
+            <ul>
+                <li><a class="hover-effect" href="exhibition.html">Exhibitions</a></li>
+                <li><a class="hover-effect active" href="program.html">Program</a></li>
+                <li><a class="hover-effect" href="visit.html">Visit</a></li>
+                <li><a class="hover-effect" href="get-involved.html">Get involved</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <div class="grid">
-    <section class="intro">
-        <div class="head"></div>
-        <h1><span class="line-one">Program </span><span class="line-two">& tickets</span></h1>
-    </section>
+        <section class="intro">
+            <div class="head"></div>
+            <h1><span class="line-one">Program </span><span class="line-two">& tickets</span></h1>
+        </section>
 
-    <!-- PROGRAM -->
+        <!-- PROGRAM -->
 
-    <section class="program" id="program">
-        <h2>Program</h2>
+        <section class="program" id="program">
+            <h2>Program</h2>
 
-        <div class="date-header-mobile">
-        <h3>Saturday 27 March 2021</h3>
+            <div class="date-header-mobile">
+                <h3>Saturday 27 March 2021</h3>
+            </div>
+
+            <h3>Today</h3>
+            <table>
+                <tr>
+                    <th>Guided tour</th>
+                    <td>Every hour</td>
+                </tr>
+                <tr>
+                    <th>Evolution <br>
+                        <span>Dig for dinosaurs</span></th>
+                    <td>10.20 - 13.00</td>
+                </tr>
+                <tr>
+                    <th>Biology <br>
+                        <span>Experiment in the lab</span></th>
+                    <td>11.30 - 13.00</td>
+                </tr>
+                <tr>
+                    <th>Robotics <br>
+                        <span>Meet Rob the Robot</span></th>
+                    <td>14.00 - 15.00</td>
+                </tr>
+                <tr>
+                    <th>Robotics<br>
+                        <span>Simulator</span></th>
+                    <td>15.00 - 16.30</td>
+                </tr>
+            </table>
+
+            <h3>Extra in weekends</h3>
+            <table>
+                <tr>
+                    <th>Night in museum</th>
+                    <td>22.00 - 08.30</td>
+                </tr>
+                <tr>
+                    <th>Young Stars club</th>
+                    <td>10.00 - 13.00</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- CALENDAR -->
+
+        <section class="calendar">
+            <div class="month">
+                <i class="fas fa-angle-left previous"></i>
+                <p class="monthAndYear"></p>
+                <i class="fas fa-angle-right nextbtn"></i>
+            </div>
+            <div>
+            <table>
+                <thead>
+                    <tr class="days-week">
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                        <th>Sun</th>
+                    </tr>
+                </thead>
+                <tbody class="everyday">
+                </tbody>
+            </table>
+            <!-- <p class="jump-to-current">Today</p> -->
+        </section>
+
+        <div class="date-header-desktop">
+            <h3>Saturday 27 March 2021</h3>
         </div>
 
-        <h3>Today</h3>
-        <table>
-            <tr>
-                <th>Guided tour</th>
-                <td>Every hour</td>
-            </tr>
-            <tr>
-                <th>Evolution <br>
-                   <span>Dig for dinosaurs</span></th>
-                <td>10.20 - 13.00</td>
-            </tr>
-            <tr>
-                <th>Biology <br>
-                    <span>Experiment in the lab</span></th>
-                <td>11.30 - 13.00</td>
-            </tr>
-            <tr>
-                <th>Robotics <br>
-                    <span>Meet Rob the Robot</span></th>
-                <td>14.00 - 15.00</td>
-            </tr>
-            <tr>
-                <th>Robotics<br>
-                    <span>Simulator</span></th>
-                <td>15.00 - 16.30</td>
-            </tr> 
-        </table>
+        <!-- TICKETS -->
 
-        <h3>Extra in weekends</h3>
-        <table>
-            <tr>
-                <th>Night in museum</th>
-                <td>22.00 - 08.30</td>
-            </tr>
-            <tr>
-                <th>Young Stars club</th>
-                <td>10.00 - 13.00</td>
-            </tr>
-        </table>
-    </section>
-
-    <!-- CALENDAR -->
-
-    <section class="calendar">
-        <h2>Calendar</h2>
-        <div class="month">
-        <i class="fas fa-angle-left"></i>
-        <p>March 2021</p>
-        <i class="fas fa-angle-right"></i>
+        <div class="tickets-header" id="buy-ticket">
+            <h2>Available tickets</h2>
+            <p class="today">for Saturday 27. March 2021</p>
         </div>
+        <section class="tickets-wrap">
 
-        <ol class="days-week">
-            <li>Mon</li>
-            <li>Tue</li>
-            <li>Wed</li>
-            <li>Thu</li>
-            <li>Fri</li>
-            <li>Sat</li>
-            <li>Sun</li>
-        </ol>
+            <!-- SINGLE -->
+            <section class="single-ticket ticket">
+                <figure>
+                    <img src="/images/mobile/tickets-dino.jpg" alt="Dinosaur-ticket">
+                </figure>
+                <h3>Night in museum</h3>
+                <p>Price per person</p>
+                <strong class="price">Nok 150</strong>
+                <form method="post">
+                    <input type="button" value="-" class="minus">
+                    <input type="number" name="quantity" value="0" class="input-text">
+                    <input type="button" value="+" class="plus">
+                    <button class="submit-btn open-modal">Buy ticket</button>
+                </form>
+            </section>
 
-        <ol class="everyday">
-              <li class="day">1</li>
-              <li class="day">2</li>
-              <li class="day">3</li>
-              <li class="day">4</li>
-              <li class="day">5</li>
-              <li class="day weekends"><span>6</span></li>
-              <li class="day weekends"><span>7</span></li>
-              <li class="day">8</li>
-              <li class="day">9</li>
-              <li class="day">10</li>
-              <li class="day">11</li>
-              <li class="day">12</li>
-              <li class="day weekends"><span>13</span></li>
-              <li class="day weekends"><span>14</span></li>
-              <li class="day">15</li>
-              <li class="day">16</li>
-              <li class="day">17</li>
-              <li class="day">18</li>
-              <li class="day">19</li>
-              <li class="day weekends"><span>20</span></li>
-              <li class="day weekends"><span>21</span></li>
-              <li class="day">22</li>
-              <li class="day">23</li>
-              <li class="day">24</li>
-              <li class="day">25</li>
-              <li class="day">26</li>
-              <li class="day weekends date"><span>27</span></li>
-              <li class="day weekends"><span>28</span></li>
-              <li class="day">29</li>
-              <li class="day">30</li>
-              <li class="day">31</li>
-              <li class="day next">1</li>
-              <li class="day next">2</li>
-              <li class="day next">3</li>
-              <li class="day next">4</li>
-        </ol>
-    </section>
+            <!-- GROUP -->
+            <section class="group-ticket ticket">
+                <figure>
+                    <img src="/images/mobile/tickets-dino.jpg" alt="Dinosaur-ticket">
+                </figure>
+                <h3>Night in museum</h3>
+                <p>Price per person</p>
+                <strong class="price">Nok 130</strong>
+                <p>Group of 15 or more</p>
+                <a href="#" class="submit-btn open-modal">Contact us</a>
+                <strong class="discount">Group discount</strong>
+            </section>
 
-    <div class="date-header-desktop">
-        <h3>Saturday 27 March 2021</h3>
-        </div>
+            <!-- BOOKING -->
+            <section class="booking ticket">
+                <figure>
+                    <img src="/images/mobile/tickets-robot.jpg" alt="Rob the robot-ticket">
+                </figure>
+                <h3>Meet Rob the Robot</h3>
+                <p>Free entrance Reserve seats</p>
+                <form method="post">
+                    <input type="button" value="-" class="minus">
+                    <input type="number" name="quantity" value="0" class="input-text" id="qty-box">
+                    <input type="button" value="+" class="plus">
+                    <button class="submit-btn open-modal">Book</button>
+                </form>
+            </section>
 
-<!-- TICKETS -->
-
-    <div class="tickets-header" id="buy-ticket">
-        <h2>Available tickets</h2>
-        <p>for Saturday 27. March 2021</p>
-    </div>
-<section class="tickets-wrap">
-
-  <!-- SINGLE -->
-    <section class="single-ticket ticket">
-        <figure>
-        <img src="/images/mobile/tickets-dino.jpg" alt="Dinosaur-ticket">
-        </figure>
-        <h3>Night in museum</h3>
-        <p>Price per person</p>
-        <strong class="price">Nok 150</strong>
-        <form method="post">
-            <input type="button" value="-" class="minus">
-            <input type="number" name="quantity" value="1" class="input-text">
-            <input type="button" value="+" class="plus">
-            <button type="submit" class="submit-btn">Buy ticket</button>
-        </form>
-    </section>
-
-<!-- GROUP -->
-    <section class="group-ticket ticket">
-        <figure>
-            <img src="/images/mobile/tickets-dino.jpg" alt="Dinosaur-ticket">
-        </figure>
-        <h3>Night in museum</h3>
-        <p>Price per person</p>
-        <strong class="price">Nok 130</strong>
-        <p>Group of 15 or more</p>
-        <a href="#" class="submit-btn">Buy ticket</a>
-        <strong class="discount">Group discount</strong> 
-     </section>
-
-     <!-- BOOKING -->
-     <section class="booking ticket">
-            <figure>
-                <img src="/images/mobile/tickets-robot.jpg" alt="Rob the robot-ticket">
-            </figure>
-            <h3>Meet Rob the Robot</h3>
-            <p>Free entrance Reserve seats</p>
-            <form method="post">
-                <input type="button" value="-" class="minus">
-                <input type="number" name="quantity" value="1" class="input-text" id="qty-box">
-                <input type="button" value="+" class="plus">
-                <button type="submit" class="submit-btn">Book</button>
-            </form>
-       </section>
-
-       <!-- GUIDED TOUR -->
-        <section class="guided-tour ticket">
+            <!-- GUIDED TOUR -->
+            <section class="guided-tour ticket">
                 <div class="guided-img"></div>
                 <div class="sitting-skeleton"></div>
 
                 <div class="info-text">
-                <h3 id="guide-headline">Guided tour</h3>
-                <p>Guided tours leave every hour. Price include a handy printed guide of the museum.</p>
-                <p id="contact">Guided tour for a group? <a href="#">Contact us!</a></p>
-            </div>
+                    <h3 id="guide-headline">Guided tour</h3>
+                    <p>Guided tours leave every hour. Price include a handy printed guide of the museum.</p>
+                    <p id="contact">Guided tour for a group? <a href="#">Contact us!</a></p>
+                </div>
 
-            <div class="buy">
-                <p>Price per person</p>
-                <strong class="price">Nok 70</strong>
+                <div class="buy">
+                    <p>Price per person</p>
+                    <strong class="price">Nok 70</strong>
 
-                <form method="post">
-                    <input type="button" value="-" class="minus">
-                    <input type="number" name="quantity" value="1" class="input-text">
-                    <input type="button" value="+" class="plus">
-                    <button type="submit" class="submit-btn guide-btn">Buy ticket</button>
-                </form>
-            </div>
-         </section>
-</section>
+                    <form method="post">
+                        <input type="button" value="-" class="minus">
+                        <input type="number" name="quantity" value="0" class="input-text">
+                        <input type="button" value="+" class="plus">
+                        <button class="submit-btn guide-btn open-modal">Buy ticket</button>
+                    </form>
+                </div>
+            </section>
+        </section>
 
- <!-- ACTIVITIES FOR KIDS -->
+        <!-- ACTIVITIES FOR KIDS -->
 
-<div class="extra-activities">
-    <section class="activities-wrap">
-        <div class="header-links-container">
-        <div class="activities">
-        <h2>More activites for kids</h2>
-        </div>
+        <div class="extra-activities">
+            <section class="activities-wrap">
+                <div class="header-links-container">
+                    <div class="activities">
+                        <h2>More activites for kids</h2>
+                    </div>
 
-    <div class="links">
-        <a href="#" class="kids-link">Newtonian Physics<i class="fas fa-angle-right"></i></a>
-        <a href="#" class="kids-link">Holiday Club<i class="fas fa-angle-right"></i></a>
-        <a href="#" class="kids-link">Young Stars Club<i class="fas fa-angle-right"></i></a>
+                    <div class="links">
+                        <a href="#" class="kids-link">Newtonian Physics<i class="fas fa-angle-right"></i></a>
+                        <a href="#" class="kids-link">Holiday Club<i class="fas fa-angle-right"></i></a>
+                        <a href="#" class="kids-link">Young Stars Club<i class="fas fa-angle-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="act-pic1-container"></div>
+                <div class="act-pic2-container"></div>
+            </section>
         </div>
     </div>
 
-    <div class="act-pic1-container"></div>
-    <div class="act-pic2-container"></div>
-    </section>
-</div>
-</div>
+    <!-- Modal -->
 
-<footer>
-    <div class="footer-container">
-    <a href="index.html" class="footer-logo-mobile"><img src="/images/logo-some/logo-footer.svg" alt="Picture of Community Science Museum logo"></a>
-    <a href="index.html" class="footer-logo-desktop"><img src="/images/logo-some/logo-footer-desktop.svg" alt="Picture of Community Science Museum logo"></a>
-    <section>
-    <ul>
-       <li><a href="visit.html">Plan your visit</a></li>
-       <li><a href="program.html">Program</a></li>
-       <li><a href="get-involved.html">Get involved</a></li>
-       <li><a href="#">FAQ</a></li>
-    </ul>
-</section>
-<figure>
-    <a href="#"><i class="fab fa-facebook face"></i></a>
-    <a href="#"><i class="fab fa-twitter twitter"></i></a>
-    <a href="#"><i class="fab fa-instagram insta"></i></a>
-</figure>
-</div>
-</footer>
+    <div class="modal" id="modal1">
+        <div class="modal-dialog">
+
+          <header class="modal-header" id="header-modal">
+            <h3 class="modal-header-text">Thank you. Your tickets are booked.</h3>
+          </header>
+
+          <section class="modal-content">
+            <p class="success"><span>Excellent choice!</span><br>
+            Your item has been added to the cart.</p>
+            <!-- <section class="cartItems">
+              <div class="cartImg"></div>
+              <div class="cartInfo"></div>
+            </section> -->
+            <img src="" alt="" class="modal-img">
+            <div class="buttons-container-modal">
+            <a role="button" class="close-modal button" id="modal-button" data-close>Continue shopping</a>
+            <a href="#" class="button button-blue modal-button">Go to cart</a>
+            </div>
+          </section>
+        </div>
+      </div>
+
+    <footer>
+        <div class="footer-container">
+            <a href="index.html" class="footer-logo-mobile"><img src="/images/logo-some/logo-footer.svg"
+                    alt="Picture of Community Science Museum logo"></a>
+            <a href="index.html" class="footer-logo-desktop"><img src="/images/logo-some/logo-footer-desktop.svg"
+                    alt="Picture of Community Science Museum logo"></a>
+            <section>
+                <ul>
+                    <li><a href="visit.html">Plan your visit</a></li>
+                    <li><a href="program.html">Program</a></li>
+                    <li><a href="get-involved.html">Get involved</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </section>
+            <figure>
+                <a href="#"><i class="fab fa-facebook face"></i></a>
+                <a href="#"><i class="fab fa-twitter twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram insta"></i></a>
+            </figure>
+        </div>
+    </footer>
+    <script src="js/calendar.js"></script>
 </body>
+
 </html>
