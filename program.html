@@ -18,6 +18,11 @@
 </head>
 
 <body>
+    <div class="preload-spinner-wrap">
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+    </div>
     <header>
         <a href="index.html"><img src="/images/logo-some/logo-header-desktop.svg" alt="Community Science Museum logo"
                 class="header-logo"></a>
@@ -43,282 +48,273 @@
             </ul>
         </nav>
     </header>
+    <main>
+        <div class="grid">
+            <section class="intro">
+                <div class="head"></div>
+                <h1><span class="line-one">Program </span><span class="line-two">& tickets</span></h1>
+            </section>
 
-    <div class="grid">
-        <section class="intro">
-            <div class="head"></div>
-            <h1><span class="line-one">Program </span><span class="line-two">& tickets</span></h1>
-        </section>
+            <!-- PROGRAM -->
 
-        <!-- PROGRAM -->
+            <section class="program" id="program">
+                <h2>Program</h2>
 
-        <section class="program" id="program">
-            <h2>Program</h2>
+                <div class="date-header-mobile">
+                    <h3>Saturday 27 March 2021</h3>
+                </div>
 
-            <div class="date-header-mobile">
+                <h3>Today</h3>
+                <table>
+                    <tr>
+                        <th>Guided tour</th>
+                        <td>Every hour</td>
+                    </tr>
+                    <tr>
+                        <th>Evolution <br>
+                            <span>Dig for dinosaurs</span></th>
+                        <td>10.20 - 13.00</td>
+                    </tr>
+                    <tr>
+                        <th>Biology <br>
+                            <span>Experiment in the lab</span></th>
+                        <td>11.30 - 13.00</td>
+                    </tr>
+                    <tr>
+                        <th>Robotics <br>
+                            <span>Meet Rob the Robot</span></th>
+                        <td>14.00 - 15.00</td>
+                    </tr>
+                    <tr>
+                        <th>Robotics<br>
+                            <span>Simulator</span></th>
+                        <td>15.00 - 16.30</td>
+                    </tr>
+                </table>
+
+                <h3>Extra in weekends</h3>
+                <table>
+                    <tr>
+                        <th>Night in museum</th>
+                        <td>22.00 - 08.30</td>
+                    </tr>
+                    <tr>
+                        <th>Young Stars club</th>
+                        <td>10.00 - 13.00</td>
+                    </tr>
+                </table>
+            </section>
+
+            <!-- CALENDAR -->
+
+            <section class="calendar">
+                <div class="month">
+                    <i class="fas fa-angle-left previous"></i>
+                    <p class="monthAndYear"></p>
+                    <i class="fas fa-angle-right nextbtn"></i>
+                </div>
+                <div>
+                    <table class="calendar-table">
+                        <thead>
+                            <tr class="days-week">
+                                <th>Mon</th>
+                                <th>Tue</th>
+                                <th>Wed</th>
+                                <th>Thu</th>
+                                <th>Fri</th>
+                                <th>Sat</th>
+                                <th>Sun</th>
+                            </tr>
+                        </thead>
+                        <tbody class="everyday">
+                        </tbody>
+                    </table>
+                    <!-- <p class="jump-to-current">Today</p> -->
+            </section>
+
+            <div class="date-header-desktop">
                 <h3>Saturday 27 March 2021</h3>
             </div>
 
-            <h3>Today</h3>
-            <table>
-                <tr>
-                    <th>Guided tour</th>
-                    <td>Every hour</td>
-                </tr>
-                <tr>
-                    <th>Evolution <br>
-                        <span>Dig for dinosaurs</span></th>
-                    <td>10.20 - 13.00</td>
-                </tr>
-                <tr>
-                    <th>Biology <br>
-                        <span>Experiment in the lab</span></th>
-                    <td>11.30 - 13.00</td>
-                </tr>
-                <tr>
-                    <th>Robotics <br>
-                        <span>Meet Rob the Robot</span></th>
-                    <td>14.00 - 15.00</td>
-                </tr>
-                <tr>
-                    <th>Robotics<br>
-                        <span>Simulator</span></th>
-                    <td>15.00 - 16.30</td>
-                </tr>
-            </table>
+            <!-- TICKETS -->
 
-            <h3>Extra in weekends</h3>
-            <table>
-                <tr>
-                    <th>Night in museum</th>
-                    <td>22.00 - 08.30</td>
-                </tr>
-                <tr>
-                    <th>Young Stars club</th>
-                    <td>10.00 - 13.00</td>
-                </tr>
-            </table>
-        </section>
-
-        <!-- CALENDAR -->
-
-        <section class="calendar">
-            <div class="month">
-                <i class="fas fa-angle-left previous"></i>
-                <p class="monthAndYear"></p>
-                <i class="fas fa-angle-right nextbtn"></i>
+            <div class="tickets-header" id="buy-ticket">
+                <h2>Available tickets</h2>
+                <p class="today">for Saturday 27. March 2021</p>
             </div>
-            <div>
-                <table class="calendar-table">
-                    <thead>
-                        <tr class="days-week">
-                            <th>Mon</th>
-                            <th>Tue</th>
-                            <th>Wed</th>
-                            <th>Thu</th>
-                            <th>Fri</th>
-                            <th>Sat</th>
-                            <th>Sun</th>
-                        </tr>
-                    </thead>
-                    <tbody class="everyday">
-                    </tbody>
-                </table>
-                <!-- <p class="jump-to-current">Today</p> -->
-        </section>
+            <section class="tickets-wrap">
 
-        <div class="date-header-desktop">
-            <h3>Saturday 27 March 2021</h3>
-        </div>
-
-        <!-- TICKETS -->
-
-        <div class="tickets-header" id="buy-ticket">
-            <h2>Available tickets</h2>
-            <p class="today">for Saturday 27. March 2021</p>
-        </div>
-        <section class="tickets-wrap">
-
-            <!-- SINGLE -->
-            <section class="single-ticket ticket">
-                <figure>
-                    <img src="/images/mobile/tickets-dino.jpg" alt="Dinosaur-ticket">
-                </figure>
-                <h3>Night in museum</h3>
-                <p>Price per person</p>
-                <strong class="price">Nok 150</strong>
-                <form method="post">
-                    <input type="button" value="-" class="minus">
-                    <input type="number" name="quantity" value="0" class="input-text">
-                    <input type="button" value="+" class="plus">
-                    <button class="submit-btn open-modal">Book</button>
-                </form>
-            </section>
-
-            <!-- GROUP -->
-            <section class="group-ticket ticket">
-                <figure>
-                    <img src="/images/mobile/tickets-dino.jpg" alt="Dinosaur-ticket">
-                </figure>
-                <h3>Night in museum</h3>
-                <p>Price per person</p>
-                <strong class="price">Nok 130</strong>
-                <p>Group of 15 or more</p>
-                <a href="#" class="submit-btn open-modal">Contact us</a>
-                <strong class="discount">Group discount</strong>
-            </section>
-
-            <!-- BOOKING -->
-            <section class="booking ticket">
-                <figure>
-                    <img src="/images/mobile/tickets-robot.jpg" alt="Rob the robot-ticket">
-                </figure>
-                <h3>Meet Rob the Robot</h3>
-                <p>Free entrance Reserve seats</p>
-                <form method="post">
-                    <input type="button" value="-" class="minus">
-                    <input type="number" name="quantity" value="0" class="input-text" id="qty-box">
-                    <input type="button" value="+" class="plus">
-                    <button class="submit-btn open-modal">Book</button>
-                </form>
-            </section>
-
-            <!-- GUIDED TOUR -->
-            <section class="guided-tour ticket">
-                <div class="guided-img"></div>
-                <div class="sitting-skeleton"></div>
-
-                <div class="info-text">
-                    <h3 id="guide-headline">Guided tour</h3>
-                    <p>Guided tours leave every hour. Price include a handy printed guide of the museum.</p>
-                    <p id="contact">Guided tour for a group? <a href="#">Contact us!</a></p>
-                </div>
-
-                <div class="buy">
+                <!-- SINGLE -->
+                <section class="single-ticket ticket">
+                    <figure>
+                        <img src="/images/mobile/tickets-dino.jpg" alt="Dinosaur-ticket">
+                    </figure>
+                    <h3>Night in museum</h3>
                     <p>Price per person</p>
-                    <strong class="price">Nok 70</strong>
-
+                    <strong class="price">Nok 150</strong>
                     <form method="post">
                         <input type="button" value="-" class="minus">
                         <input type="number" name="quantity" value="0" class="input-text">
                         <input type="button" value="+" class="plus">
-                        <button class="submit-btn guide-btn open-modal">Book</button>
+                        <button class="submit-btn open-modal">Book</button>
                     </form>
-                </div>
+                </section>
+
+                <!-- GROUP -->
+                <section class="group-ticket ticket">
+                    <figure>
+                        <img src="/images/mobile/tickets-dino.jpg" alt="Dinosaur-ticket">
+                    </figure>
+                    <h3>Night in museum</h3>
+                    <p>Price per person</p>
+                    <strong class="price">Nok 130</strong>
+                    <p>Group of 15 or more</p>
+                    <a href="#" class="submit-btn open-modal">Contact us</a>
+                    <strong class="discount">Group discount</strong>
+                </section>
+
+                <!-- BOOKING -->
+                <section class="booking ticket">
+                    <figure>
+                        <img src="/images/mobile/tickets-robot.jpg" alt="Rob the robot-ticket">
+                    </figure>
+                    <h3>Meet Rob the Robot</h3>
+                    <p>Free entrance Reserve seats</p>
+                    <form method="post">
+                        <input type="button" value="-" class="minus">
+                        <input type="number" name="quantity" value="0" class="input-text" id="qty-box">
+                        <input type="button" value="+" class="plus">
+                        <button class="submit-btn open-modal">Book</button>
+                    </form>
+                </section>
+
+                <!-- GUIDED TOUR -->
+                <section class="guided-tour ticket">
+                    <div class="guided-img"></div>
+                    <div class="sitting-skeleton"></div>
+
+                    <div class="info-text">
+                        <h3 id="guide-headline">Guided tour</h3>
+                        <p>Guided tours leave every hour. Price include a handy printed guide of the museum.</p>
+                        <p id="contact">Guided tour for a group? <a href="#">Contact us!</a></p>
+                    </div>
+
+                    <div class="buy">
+                        <p>Price per person</p>
+                        <strong class="price">Nok 70</strong>
+
+                        <form method="post">
+                            <input type="button" value="-" class="minus">
+                            <input type="number" name="quantity" value="0" class="input-text">
+                            <input type="button" value="+" class="plus">
+                            <button class="submit-btn guide-btn open-modal">Book</button>
+                        </form>
+                    </div>
+                </section>
             </section>
-        </section>
 
-        <!-- ACTIVITIES FOR KIDS -->
+            <!-- ACTIVITIES FOR KIDS -->
 
-        <div class="extra-activities">
-            <section class="activities-wrap">
-                <div class="header-links-container">
-                    <div class="activities">
-                        <h2>More activites for kids</h2>
+            <div class="extra-activities">
+                <section class="activities-wrap">
+                    <div class="header-links-container">
+                        <div class="activities">
+                            <h2>More activites for kids</h2>
+                        </div>
+
+                        <div class="links">
+                            <a href="#" class="kids-link">Newtonian Physics<i class="fas fa-angle-right"></i></a>
+                            <a href="#" class="kids-link">Holiday Club<i class="fas fa-angle-right"></i></a>
+                            <a href="#" class="kids-link">Young Stars Club<i class="fas fa-angle-right"></i></a>
+                        </div>
                     </div>
 
-                    <div class="links">
-                        <a href="#" class="kids-link">Newtonian Physics<i class="fas fa-angle-right"></i></a>
-                        <a href="#" class="kids-link">Holiday Club<i class="fas fa-angle-right"></i></a>
-                        <a href="#" class="kids-link">Young Stars Club<i class="fas fa-angle-right"></i></a>
-                    </div>
-                </div>
+                    <div class="act-pic1-container"></div>
+                    <div class="act-pic2-container"></div>
+                </section>
+            </div>
+        </div>
 
-                <div class="act-pic1-container"></div>
-                <div class="act-pic2-container"></div>
+        <!-- Modal -->
+
+        <div class="modal" id="modal1">
+            <div class="modal-dialog">
+
+                <header class="modal-header" id="header-modal">
+                    <h3 class="modal-header-text">Thank you!</h3>
+                    <button class="close">&times;</button>
+                </header>
+
+                <section class="modal-content">
+                    <div class="conf-modal-content">
+
+                        <div class="book">
+                            <section class="modal-text">
+
+                                <figure>
+                                    <img src="" alt="" class="modal-img">
+                                </figure>
+
+                                <div class="container">
+                                    <h3 class="success">Excellent choice!</h3>
+                                    <p>You have booked <span class="nr-tickets"></span> ticket/tickets!</p>
+                                    <p>Fill in your email address and a confirmation will be sent to you.</p>
+                                    <div class="important-wrap">
+                                        <strong>Important note</strong>
+                                        <p>Please note that confirmation must be brought to the event and that tickets
+                                            must
+                                            be paid
+                                            at the entrance.</p>
+                                    </div>
+                                </div>
+
+                                <form action="" class="emailform">
+                                    <label class="email-label" for="email">Please enter a valid email
+                                        <input type="email" class="email booking-input">
+                                    </label>
+                                    <button class="send">Send</button>
+                                </form>
+
+                                <div class="email-wrap">
+                                    <div class="success-message booked">
+                                        <p><span>Thank you!</span> A confirmation has been sent to your email.</p>
+                                    </div>
+                            </section>
+                        </div>
+
+                        <!-- ////////////////////////////  -->
+
+                        <div class="contact">
+                            <section class="modal-text modal-contact">
+
+                                <div class="container contact-con">
+                                    <h3 class="success">Group-ticket!</h3>
+                                    <p>Please fill in your email, and we will contact you with more information!</p>
+                                </div>
+
+                                <form action="" class="emailform email-contact">
+                                    <label class="email-label" for="email">Please enter a valid email
+                                        <input type="email" class="email contact-input">
+                                    </label>
+                                    <button class="send">Send</button>
+                                </form>
+
+                                <div class="email-wrap">
+                                    <div class="success-message contacted">
+                                        <p><span>Thank you!</span>
+                                            <p>
+                                                <p>We will contact you within 2-3 days. <br> A confirmation has been
+                                                    sent to your email.</p>
+                                    </div>
+                            </section>
+                        </div>
+                    </div>
+            </div>
             </section>
+
         </div>
-    </div>
-
-    <!-- Modal -->
-
-    <div class="modal" id="modal1">
-        <div class="modal-dialog">
-
-            <header class="modal-header" id="header-modal">
-                <h3 class="modal-header-text">Thank you!</h3>
-                <button class="close">&times;</button>
-            </header>
-
-            <section class="modal-content">
-                <div class="conf-modal-content">
-
-                    <div class="book">
-                        <section class="modal-text">
-
-                            <figure>
-                                <img src="" alt="" class="modal-img">
-                            </figure>
-
-                            <div class="container">
-                                <h3 class="success">Excellent choice!</h3>
-                                <p>You have booked <span class="nr-tickets"></span> ticket/tickets!</p>
-                                <p>Fill in your email address and a confirmation will be sent to you.</p>
-                                <div class="important-wrap">
-                                    <strong>Important note</strong>
-                                    <p>Please note that confirmation must be brought to the event and that tickets must
-                                        be paid
-                                        at the entrance.</p>
-                                </div>
-                            </div>
-
-                            <form action="" class="emailform">
-                                <label class="email-label" for="email">Please enter a valid email
-                                    <input type="email" class="email booking-input">
-                                </label>
-                                <button class="send">Send</button>
-                            </form>
-
-                            <div class="email-wrap">
-                                <div class="success-message booked">
-                                    <p><span>Thank you!</span> A confirmation has been sent to your email.</p>
-                                </div>
-                        </section>
-                    </div>
-
-                    <!-- ////////////////////////////  -->
-
-                    <div class="contact">
-                        <section class="modal-text modal-contact">
-
-                            <div class="container contact-con">
-                                <h3 class="success">Group-ticket!</h3>
-                                <p>Please fill in your email, and we will contact you with more information!</p>
-                            </div>
-
-                            <form action="" class="emailform email-contact">
-                                <label class="email-label" for="email">Please enter a valid email
-                                    <input type="email" class="email contact-input">
-                                </label>
-                                <button class="send">Send</button>
-                            </form>
-
-                            <div class="email-wrap">
-                                <div class="success-message contacted">
-                                    <p><span>Thank you!</span><p>
-                                        <p>We will contact you within 2-3 days. <br> A confirmation has been sent to your email.</p>
-                                </div>
-                        </section>
-                    </div>
-
-                    <!-- <div class="contact">
-                        <section class="modal-text">
-                            <h3 class="success">Group-ticket!</h3>
-                            <p>Please fill in your email, and we will contact you for more information!</p>
-                        </section>
-
-                        <div class="success-message contacted">
-                            <p><span>Thank you!</span> We will contact you within 2-3 days.</p>
-                            <p>A confirmation has been sent to your email.</p>
-                        </div> -->
-                    
-                </div>
         </div>
-        </section>
-
-    </div>
-    </div>
-
+    </main>
     <footer>
         <div class="footer-container">
             <a href="index.html" class="footer-logo-mobile"><img src="/images/logo-some/logo-footer.svg"
@@ -341,6 +337,7 @@
         </div>
     </footer>
     <script src="js/calendar.js"></script>
+    <script src="/js/components.js"></script>
 </body>
 
 </html>

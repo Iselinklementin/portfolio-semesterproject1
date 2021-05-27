@@ -4,7 +4,7 @@
   display: flex;
   height: 447.6px;
   width: 100%;
-  margin-top: 0;
+  margin-top: -111px;
   position: absolute;
   z-index: 0;
   background-position: 45%;
@@ -277,6 +277,10 @@ figure a {
 }
 
 @media only screen and (min-width: 640px) {
+
+  .header {
+    margin-top: -63px;
+  }
 
   .vision,
   .links,
@@ -718,6 +722,7 @@ figure a {
 @media only screen and (min-width: 1000px) {
   .header {
     height: 600px;
+    margin-top: -127px;
   }
 
   .intro {

@@ -4,7 +4,7 @@
   display: flex;
   height: 300px;
   width: 100%;
-  margin-top: 0;
+  margin-top: -14rem;
   position: absolute;
   z-index: 0;
   background-position: 100%;
@@ -239,6 +239,7 @@ figure a {
 }
 
 @media only screen and (min-width: 669px) {
+
   .cosmo,
   .biology-desktop {
     display: none;
@@ -378,6 +379,7 @@ figure a {
 }
 
 @media only screen and (min-width: 910px) {
+
   .biology-pad,
   .cosmo-img-mobile {
     display: none;
@@ -526,6 +528,7 @@ figure a {
   .intro {
     height: 160px;
   }
+
   .intro h1 {
     width: 500px;
   }
