@@ -88,6 +88,10 @@ table {
   border-collapse: collapse;
 }
 
+.calendar-table {
+  width: 100%;
+}
+
 tr {
   /* border-top: solid; */
   border-width: 1px;
