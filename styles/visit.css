@@ -350,6 +350,7 @@ iframe {
 .info-text p:last-child {
   margin-bottom: 1rem;
 }
+
 .museum-logo {
   height: 80px;
 }
@@ -362,11 +363,12 @@ iframe {
   .header {
     height: 420px;
     width: 420px;
+    top: -98px;
   }
 
   .astronaut {
     height: 320px;
-    top: 180px;
+    top: 25px;
   }
 
   .intro {
@@ -376,7 +378,7 @@ iframe {
   }
 
   h1 {
-    font-size: 3.8rem;
+    font-size: 3rem;
     width: 350px;
   }
 

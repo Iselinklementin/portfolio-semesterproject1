@@ -24,5 +24,5 @@ window.onload = () => {
     window.setInterval(function () {
         loader.style.display = "none";
         main.style.display = "block";
-    },1200)
+    },1000)
 };
