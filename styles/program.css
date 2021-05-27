@@ -162,16 +162,6 @@ li {
   cursor: pointer;
 }
 
-/* .days-week,
-.everyday {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-} */
-
-/* .days-week {
-  padding-bottom: 5px;
-} */
-
 .day {
   border: solid 1px var(--white);
   padding: 10px;
@@ -375,18 +365,37 @@ li {
   align-items: center;
   justify-content: center;
   background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.6);
   cursor: pointer;
   transition: all 0.35s ease-in;
   display: none;
 }
 
-.buttons-container-modal {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  margin: 2rem auto;
+.close {
+  font-size: 2rem;
+  position: absolute;
+  right: 2rem;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  color: white;
+}
+
+.modal-header-text span {
+  font-weight: 400;
+}
+
+.success-message {
+  background-color: var(--green);
+  padding: 1rem 10px;
+  color: white;
+  margin-bottom: 1rem;
+  height: 100%;
+  display: none;
+}
+
+.success-message span {
+  font-weight: 600;
 }
 
 #modal-button,
@@ -403,13 +412,15 @@ li {
   width: 80vw;
   background: var(--white);
   cursor: default;
+  max-width: 900px;
 }
 
 #header-modal {
   min-height: 40px;
   height: 100%;
   width: 100%;
-  border: red solid thin;
+  background-color: var(--dark-blue);
+  color: white;
 }
 
 .modal-content {
@@ -419,7 +430,6 @@ li {
   width: 100%;
   height: 100%;
   background: var(--white-color);
-  border: blue solid thin;
 }
 
 .modal-header {
@@ -432,18 +442,98 @@ li {
   font-size: 1rem;
 }
 
-.modal-content>p {
-  padding: 0 10px 0 5px;
-  text-align: center;
+.conf-modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem;
+  background-color: rgba(150, 199, 228, 0.26);
+  max-height: 600px;
+}
+
+.modal-text {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.modal-text figure {
+  display: none;
+}
+
+.email-wrap {
+  padding: 10px;
+  padding: 10px 10px 0 10px;
+}
+
+.email {
+  /* display: block; */
+  border-radius: 4px;
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow: rgba(0, 0, 0, 0.048) 1px 2px 5px 2px;
+  padding: 1px;
+  height: 30px;
+  width: 100%;
+  margin: 1rem 0;
+  font-size: 1rem;
+  background-color: #f4f4f48c;
+}
+
+input[type="email"] {
+  padding: 5px 0 5px 5px;
+}
+
+.email-label {
+  font-weight: 600;
+}
+
+.emailform {
+  width: 90%;
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+}
+
+.email-contact {
+  height: 200px;
+  position: relative;
+}
+
+.send {
+  display: block;
   margin-bottom: 1rem;
-}
-
-.modal-content span {
+  background-color: var(--coral);
+  display: block;
+  width: 6rem;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
   font-weight: bold;
+  font-size: 1rem;
+  padding: 6px;
+  transition: background 200ms ease-in-out, transform 100ms ease;
+  color: var(--white);
 }
 
-.modal-header-text {
-  color: black;
+.important-wrap {
+  border-top: black solid thin;
+  padding-top: 20px;
+  font-size: 0.8;
+  padding-bottom: 8rem;
+}
+
+.contact {
+  height: 300px;
+  position: relative;
+}
+
+.contacted {
+  text-align: center;
+}
+
+.container {
+  padding-left: 1rem;
 }
 
 /* ---------------- QUANTITY ---------------- */
@@ -465,6 +555,7 @@ input[type="number"] {
 input.plus,
 input.minus {
   padding: 9px;
+  font-weight: 600;
   -webkit-appearance: none;
   -moz-appearance: none;
 }
@@ -830,6 +921,66 @@ a.submit-btn:focus {
     display: none;
   }
 
+  .conf-modal-content {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .modal-text {
+    flex-direction: row;
+  }
+
+  .modal-text figure {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    max-height: 270px;
+  }
+
+  .modal-contact {
+    flex-direction: column;
+  }
+
+  .modal-img {
+    /* width: 100%; */
+    object-fit: cover;
+    max-width: 257px;
+  }
+
+  .emailform {
+    width: 64%;
+    left: unset;
+    right: 40px;
+  }
+
+  .email-contact {
+    width: 100%;
+    left: auto;
+    right: 0;
+  }
+
+  .contact-con {
+    padding-left: 0;
+    padding-top: 2rem;
+  }
+
+  .success {
+    margin-top: 0.5rem;
+  }
+
+  /* .contact {
+    max-width: 330px;
+    padding-left: 20px;
+    margin-left: 0;
+    text-align: center;
+    padding-top: 1.5rem;
+    display: none;
+  } */
+
+  /* .contact-cont {
+    height: 300px;
+  } */
+
   .intro {
     grid-row: 1;
     grid-column: 1 / span 3;
@@ -1004,6 +1155,19 @@ a.submit-btn:focus {
     right: 0%;
     overflow: hidden;
   }
+
+  /* .conf-modal-content {
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    background-color: rgba(150, 199, 228, 0.26);
+  } */
+
+  /* .conf-modal-content figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  } */
 
   /* ---------------- ACTIVITIES FOR KIDS ---------------- */
 

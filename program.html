@@ -109,22 +109,22 @@
                 <i class="fas fa-angle-right nextbtn"></i>
             </div>
             <div>
-            <table>
-                <thead>
-                    <tr class="days-week">
-                        <th>Mon</th>
-                        <th>Tue</th>
-                        <th>Wed</th>
-                        <th>Thu</th>
-                        <th>Fri</th>
-                        <th>Sat</th>
-                        <th>Sun</th>
-                    </tr>
-                </thead>
-                <tbody class="everyday">
-                </tbody>
-            </table>
-            <!-- <p class="jump-to-current">Today</p> -->
+                <table>
+                    <thead>
+                        <tr class="days-week">
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                            <th>Sat</th>
+                            <th>Sun</th>
+                        </tr>
+                    </thead>
+                    <tbody class="everyday">
+                    </tbody>
+                </table>
+                <!-- <p class="jump-to-current">Today</p> -->
         </section>
 
         <div class="date-header-desktop">
@@ -151,7 +151,7 @@
                     <input type="button" value="-" class="minus">
                     <input type="number" name="quantity" value="0" class="input-text">
                     <input type="button" value="+" class="plus">
-                    <button class="submit-btn open-modal">Buy ticket</button>
+                    <button class="submit-btn open-modal">Book</button>
                 </form>
             </section>
 
@@ -202,7 +202,7 @@
                         <input type="button" value="-" class="minus">
                         <input type="number" name="quantity" value="0" class="input-text">
                         <input type="button" value="+" class="plus">
-                        <button class="submit-btn guide-btn open-modal">Buy ticket</button>
+                        <button class="submit-btn guide-btn open-modal">Book</button>
                     </form>
                 </div>
             </section>
@@ -235,25 +235,89 @@
     <div class="modal" id="modal1">
         <div class="modal-dialog">
 
-          <header class="modal-header" id="header-modal">
-            <h3 class="modal-header-text">Thank you. Your tickets are booked.</h3>
-          </header>
+            <header class="modal-header" id="header-modal">
+                <h3 class="modal-header-text">Thank you!</h3>
+                <button class="close">&times;</button>
+            </header>
 
-          <section class="modal-content">
-            <p class="success"><span>Excellent choice!</span><br>
-            Your item has been added to the cart.</p>
-            <!-- <section class="cartItems">
-              <div class="cartImg"></div>
-              <div class="cartInfo"></div>
-            </section> -->
-            <img src="" alt="" class="modal-img">
-            <div class="buttons-container-modal">
-            <a role="button" class="close-modal button" id="modal-button" data-close>Continue shopping</a>
-            <a href="#" class="button button-blue modal-button">Go to cart</a>
-            </div>
-          </section>
+            <section class="modal-content">
+                <div class="conf-modal-content">
+
+                    <div class="book">
+                        <section class="modal-text">
+
+                            <figure>
+                                <img src="" alt="" class="modal-img">
+                            </figure>
+
+                            <div class="container">
+                                <h3 class="success">Excellent choice!</h3>
+                                <p>You have booked <span class="nr-tickets"></span> ticket/tickets!</p>
+                                <p>Fill in your email address and a confirmation will be sent to you.</p>
+                                <div class="important-wrap">
+                                    <strong>Important note</strong>
+                                    <p>Please note that confirmation must be brought to the event and that tickets must
+                                        be paid
+                                        at the entrance.</p>
+                                </div>
+                            </div>
+
+                            <form action="" class="emailform">
+                                <label class="email-label" for="email">Please enter a valid email
+                                    <input type="email" class="email booking-input">
+                                </label>
+                                <button class="send">Send</button>
+                            </form>
+
+                            <div class="email-wrap">
+                                <div class="success-message booked">
+                                    <p><span>Thank you!</span> A confirmation has been sent to your email.</p>
+                                </div>
+                        </section>
+                    </div>
+
+                    <!-- ////////////////////////////  -->
+
+                    <div class="contact">
+                        <section class="modal-text modal-contact">
+
+                            <div class="container contact-con">
+                                <h3 class="success">Group-ticket!</h3>
+                                <p>Please fill in your email, and we will contact you for more information!</p>
+                            </div>
+
+                            <form action="" class="emailform email-contact">
+                                <label class="email-label" for="email">Please enter a valid email
+                                    <input type="email" class="email contact-input">
+                                </label>
+                                <button class="send">Send</button>
+                            </form>
+
+                            <div class="email-wrap">
+                                <div class="success-message contacted">
+                                    <p><span>Thank you!</span><p>
+                                        <p>We will contact you within 2-3 days. <br> A confirmation has been sent to your email.</p>
+                                </div>
+                        </section>
+                    </div>
+
+                    <!-- <div class="contact">
+                        <section class="modal-text">
+                            <h3 class="success">Group-ticket!</h3>
+                            <p>Please fill in your email, and we will contact you for more information!</p>
+                        </section>
+
+                        <div class="success-message contacted">
+                            <p><span>Thank you!</span> We will contact you within 2-3 days.</p>
+                            <p>A confirmation has been sent to your email.</p>
+                        </div> -->
+                    
+                </div>
         </div>
-      </div>
+        </section>
+
+    </div>
+    </div>
 
     <footer>
         <div class="footer-container">

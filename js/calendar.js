@@ -47,20 +47,12 @@ function showCalendar(month, year) {
                     cell.classList.add("chosen-date");
                     cell.classList.add("todays-date");
                     headerDate.innerText = today.getDate() + ". " + months[month] + " " + year;
-
-                    // function jumpToCurrent() {
-                    //     showCalendar(currentMonth, currentYear);
-                    //     headerDate.innerText = today.getDate() + ". " + months[month] + " " + year;
-                    //     cell.classList.add("chosen-date");
-                    //     cell.classList.add("todays-date");
-                    // }
                 }
                 cell.appendChild(cellText);
                 row.appendChild(cell);
                 date++;
             }
         }
-        // jump.addEventListener("click", jumpToCurrent);
 
         const weekTest = document.querySelectorAll(".row");
 
@@ -130,23 +122,25 @@ function previous() {
 nextBtn.addEventListener("click", next);
 prevBtn.addEventListener("click", previous);
 
-
 const num = document.querySelectorAll(".input-text");
 const modal = document.querySelector(".modal");
 const openModal = document.querySelectorAll(".open-modal");
-const closeModal = document.querySelectorAll("[data-close]");
+const closeModal = document.querySelector(".close");
+const numTickets = document.querySelector(".nr-tickets");
 
 num.forEach(n => {
     n.value = 0;
     let minus = n.form[0];
     let plus = n.form[2]
     let btn = n.form[3];
-    btn.disabled = true;
     let count = 0;
 
-    plus.addEventListener("click", (e) => {
+    btn.disabled = true;
+
+    plus.addEventListener("click", () => {
         count++
         n.value = count;
+        numTickets.innerText = n.value;
         btn.disabled = false;
     });
 
@@ -154,6 +148,7 @@ num.forEach(n => {
         if (count > 0) {
             count--
             n.value = count;
+            numTickets.innerText = n.value;
 
             if (count === 0) {
                 btn.disabled = true;
@@ -162,20 +157,132 @@ num.forEach(n => {
     });
 });
 
-let modalImg = document.querySelector(".modal-img");
+const modalImg = document.querySelector(".modal-img");
+const modalText = document.querySelector(".model-text");
+const important = document.querySelector(".important-wrap");
+const form = document.querySelectorAll(".emailform");
+const success = document.querySelector(".success-message");
+const email = document.querySelectorAll(".email");
+const bookingInput = document.querySelector(".booking-input");
+const contactInput = document.querySelector(".contact-input");
+const sendBtn = document.querySelectorAll(".send");
+const contact = document.querySelector(".contact");
+const book = document.querySelector(".book");
+const successContacted = document.querySelector(".contacted");
+const successBooked = document.querySelector(".booked");
 
-
-for(let i = 0; i < openModal.length; i++) {
-    openModal[i].addEventListener("click", function(e) {
+for (let i = 0; i < openModal.length; i++) {
+    openModal[i].addEventListener("click", function (e) {
         e.preventDefault()
-      modal.style.display = "flex";
-      modalImg.src = e.target.offsetParent.firstElementChild.firstElementChild.src
-    console.log(e.target.offsetParent.firstElementChild.firstElementChild.src)
-    });
-  };
+        modal.style.display = "flex";
 
-  window.onclick = function(event) {
+        form.forEach(el => {
+            el.style.display = "block";
+        });
+
+        sendBtn.forEach(btn => {
+            btn.disabled = true;
+        });
+
+        successBooked.style.display = "none";
+        successContacted.style.display = "none";
+
+        let imgsource = e.target.offsetParent.firstElementChild.firstElementChild;
+        modalImg.src = "/images/desktop/guided-tour-robot.png";
+
+        if (imgsource) {
+            modalImg.src = imgsource.src;
+        };
+
+        if (e.target.innerText === "CONTACT US") {
+
+            book.style.display = "none";
+            contact.style.display = "block";
+
+            sendBtn.forEach(btn => {
+                btn.addEventListener("click", successContact);
+            })
+
+        } else {
+
+            important.style.paddingBottom = "8rem";
+            book.style.display = "block";
+            contact.style.display = "none";
+
+            sendBtn.forEach(btn => {
+                btn.addEventListener("click", successBook);
+            })
+        }
+    });
+};
+
+closeModal.addEventListener("click", () => {
+    modal.style.display = "none";
+
+    form.forEach(el => {
+        el.reset();
+        el.style.display = "none";
+    })
+});
+
+window.onclick = function (event) {
     if (event.target === modal) {
-          modal.style.display = "none";
+        modal.style.display = "none";
+
+        form.forEach(el => {
+            el.reset();
+            el.style.display = "none";
+        })
     }
-}
+};
+
+function validateEmail(email) {
+    const regEx = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    const patternMatches = regEx.test(email);
+    return patternMatches;
+};
+
+function submitEmail() {
+
+    if (validateEmail(bookingInput.value) || validateEmail(contactInput.value)) {
+        bookingInput.style.borderColor = "green";
+        contactInput.style.borderColor = "green";
+
+        sendBtn.forEach(btn => {
+            btn.disabled = false;
+        })
+    } else {
+        bookingInput.style.borderColor = "red";
+        contactInput.style.borderColor = "red";
+
+        sendBtn.forEach(btn => {
+            btn.disabled = true;
+        })
+    }
+};
+
+bookingInput.addEventListener("change", submitEmail);
+contactInput.addEventListener("change", submitEmail);
+
+function successContact(e) {
+    e.preventDefault();
+
+    form.forEach(el => {
+        el.reset();
+        el.style.display = "none";
+    })
+
+    successContacted.style.display = "block";
+};
+
+function successBook(e) {
+    e.preventDefault();
+
+    form.forEach(el => {
+        el.reset();
+        el.style.display = "none";
+    })
+
+    successBooked.style.display = "block";
+    important.style.paddingBottom = "0";
+};
