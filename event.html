@@ -13,6 +13,7 @@
         rel="stylesheet">
     <link href="styles/styles.css" rel="stylesheet" />
     <link href="styles/event.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/modal.css">
     <script src="https://kit.fontawesome.com/9b8ac118a8.js" crossorigin="anonymous"></script>
     <title>Event, night in the museum - Community Science Museum</title>
 </head>
@@ -89,7 +90,7 @@
             </figure>
 
             <figure class="desktop-dino">
-                <img src="/images/desktop/dino-exhibition-one.jpg" alt="A picture of a T-REX skeleton" class="desktop">
+                <img src="/images/desktop/dino-exhibition-one.jpg" alt="A picture of a T-REX skeleton" class="desktop" id="open-modal">
             </figure>
 
             <!-- SLEEPOVER -->
@@ -97,7 +98,7 @@
             <section class="sleepover">
                 <div class="sleepover-text">
                     <img src="/images/desktop/dino-exhibition-two.jpg"
-                        alt="A little dinosaur baby in one of our exhibitions" class="desktop">
+                        alt="A little dinosaur baby in one of our exhibitions" class="desktop" id="open-modal">
                     <h2><span>..zzZZzzZz..</span>
                         Sleepover</h2>
                     <p>Bring your own sleeping bag and get ready to
@@ -106,7 +107,7 @@
 
                 <figure class="dino-container">
                     <img src="/images/desktop/dino-exhibition-three.jpg"
-                        alt="A boy looking at a dinosaur-model in the dark" class="desktop">
+                        alt="A boy looking at a dinosaur-model in the dark" class="desktop" id="open-modal">
                 </figure>
             </section>
 
@@ -137,6 +138,16 @@
                 <a href="program.html" class="button-blue">Buy ticket</a>
             </section>
         </div>
+
+        <!-- Modal -->
+
+        <div class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <img class="modal-content img-modal">
+            </div>
+        </div>
+
     </main>
     <footer>
         <div class="footer-container">
@@ -160,6 +171,7 @@
         </div>
     </footer>
     <script src="/js/components.js"></script>
+    <script src="/js/modal.js"></script>
 </body>
 
 </html>
