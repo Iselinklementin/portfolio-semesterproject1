@@ -147,7 +147,10 @@ header {
 nav,
 #searchbar,
 #hamburger-menu,
-#search-menu {
+#search-menu,
+#newtonian-menu,
+#holiday-menu,
+#stars-club-menu {
   display: none;
 }
 

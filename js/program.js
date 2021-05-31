@@ -5,7 +5,7 @@ let today = new Date();
 let currentMonth = today.getMonth();
 let currentYear = today.getFullYear();
 
-const jump = document.querySelector(".jump-to-current");
+// const jump = document.querySelector(".jump-to-current");
 
 let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
@@ -195,16 +195,15 @@ for (let i = 0; i < openModal.length; i++) {
         };
 
         if (e.target.innerText === "CONTACT US") {
-
             book.style.display = "none";
             contact.style.display = "block";
+            contactInput.style.borderColor = "rgba(255, 255, 255, 0.4)";
 
             sendBtn.forEach(btn => {
                 btn.addEventListener("click", successContact);
             })
 
         } else {
-
             important.style.paddingBottom = "8rem";
             book.style.display = "block";
             contact.style.display = "none";
@@ -273,6 +272,7 @@ function successContact(e) {
     })
 
     successContacted.style.display = "block";
+    contactInput.style.borderColor = "rgba(255, 255, 255, 0.4)";
 };
 
 function successBook(e) {
@@ -285,4 +285,66 @@ function successBook(e) {
 
     successBooked.style.display = "block";
     important.style.paddingBottom = "0";
+    bookingInput.style.borderColor = "rgba(255, 255, 255, 0.4)";
+};
+
+/**
+ * Kids-text dropdown
+ */
+
+const newtonian = document.querySelector(".newtonian");
+const holiday = document.querySelector(".holiday");
+const starsClub = document.querySelector(".stars-club");
+const text = document.querySelectorAll(".text");
+const checkKids = document.querySelectorAll(".check");
+
+const newtonianText = document.querySelector(".infotext-kids-newtonian");
+const holidayText = document.querySelector(".infotext-kids-holiday");
+const starsClubText = document.querySelector(".infotext-kids-stars-club");
+
+function addTextInfoKids() {
+
+    newtonian.addEventListener("click", () => {
+        if (!newtonian.control.checked) {
+            removeTextCheck()
+            newtonianText.classList.add("show-text");
+        }
+
+        if (newtonian.control.checked) {
+            newtonianText.classList.remove("show-text");
+        }
+    });
+
+    holiday.addEventListener("click", () => {
+        if (!holiday.control.checked) {
+            removeTextCheck()
+            holidayText.classList.add("show-text");
+        }
+
+        if (holiday.control.checked) {
+            holidayText.classList.remove("show-text");
+        }
+    });
+
+    starsClub.addEventListener("click", () => {
+        if (!starsClub.control.checked) {
+            removeTextCheck()
+            starsClubText.classList.add("show-text");
+        }
+
+        if (starsClub.control.checked) {
+            starsClubText.classList.remove("show-text");
+        }
+    });
+};
+
+addTextInfoKids()
+
+function removeTextCheck() {
+    checkKids.forEach(kid => {
+        kid.checked = false;
+    })
+    for (let i = 0; i < text.length; i++) {
+        text[i].classList.remove("show-text")
+    }
 };

@@ -115,6 +115,7 @@ td {
   text-align: right;
   width: 110px;
   padding: 8px;
+  cursor: pointer;
 }
 
 /* HEADER IN BOXES */
@@ -289,6 +290,10 @@ li {
 
 .booking {
   background-color: var(--dark-purple);
+}
+
+.booking-input {
+  border: solid thin;
 }
 
 .guided-tour {
@@ -641,6 +646,7 @@ a.submit-btn:focus {
   margin: 1rem auto;
   text-align: center;
   max-width: 350px;
+  position: relative;
 }
 
 .kids-link {
@@ -657,6 +663,7 @@ a.submit-btn:focus {
   color: var(--white);
   text-decoration: none;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .kids-link .fas {
@@ -667,11 +674,11 @@ a.submit-btn:focus {
   background-color: var(--peach);
 }
 
-.links .kids-link:nth-child(2) {
+.links .kids-link:nth-child(4) {
   background-color: var(--coral);
 }
 
-.links .kids-link:nth-child(3) {
+.links .kids-link:nth-child(7) {
   background-color: var(--dark-blue);
 }
 
@@ -679,12 +686,25 @@ a.submit-btn:focus {
   background-color: #f49578;
 }
 
-.links .kids-link:nth-child(2):hover {
+.links .kids-link:nth-child(4):hover {
   background-color: #f4626b;
 }
 
-.links .kids-link:nth-child(3):hover {
+.links .kids-link:nth-child(7):hover {
   background-color: #105a96;
+}
+
+.infotext-kids-newtonian,
+.infotext-kids-holiday,
+.infotext-kids-stars-club {
+  display: none;
+  padding: 10px;
+  text-align: left;
+  color: black;
+}
+
+.show-text {
+  display: block;
 }
 
 @media only screen and (min-width: 768px) {
@@ -918,6 +938,10 @@ a.submit-btn:focus {
     margin: 0 10px;
     border-radius: 10px;
   }
+
+  .hide-images {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 1100px) {
@@ -971,19 +995,6 @@ a.submit-btn:focus {
   .success {
     margin-top: 0.5rem;
   }
-
-  /* .contact {
-    max-width: 330px;
-    padding-left: 20px;
-    margin-left: 0;
-    text-align: center;
-    padding-top: 1.5rem;
-    display: none;
-  } */
-
-  /* .contact-cont {
-    height: 300px;
-  } */
 
   .intro {
     grid-row: 1;
@@ -1159,19 +1170,6 @@ a.submit-btn:focus {
     right: 0%;
     overflow: hidden;
   }
-
-  /* .conf-modal-content {
-    display: flex;
-    width: 100%;
-    padding: 1rem;
-    background-color: rgba(150, 199, 228, 0.26);
-  } */
-
-  /* .conf-modal-content figure img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  } */
 
   /* ---------------- ACTIVITIES FOR KIDS ---------------- */
 

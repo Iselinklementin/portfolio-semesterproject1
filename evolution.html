@@ -61,14 +61,14 @@
             <!-- IMAGES -->
 
             <figure class="images">
-                <img src="/images/desktop/evolution-fish.jpg" alt="A boy looking down on fish swimming in the sea">
+                <img src="/images/desktop/evolution-fish-new.jpg" alt="A boy looking down on fish swimming in the sea" id="open-modal">
             </figure>
 
             <div class="flex-container dinos">
-                <img src="/images/desktop/dino-one.jpg" alt="Mammut skeleton - exhibition in the museum"
-                    class="desktop-img">
-                <img src="/images/desktop/dino-two.jpg" alt="Dinosaur skeleton, a small skeleton behind glass">
-                <img src="/images/desktop/dino-three.jpg" alt="Bird skeleton - exhibition in the museum">
+                <img src="/images/desktop/dino-skel.jpg" alt="A small skeleton lying in sand"
+                    class="desktop-img" id="open-modal">
+                <img src="/images/desktop/mammoth-skel.jpg" alt="Mammoth skeleton, a big skeletal head" id="open-modal">
+                <img src="/images/desktop/dino-three-new.jpg" alt="Bird skeleton - exhibition in the museum" id="open-modal">
             </div>
 
             <!-- HISTORY -->
@@ -121,6 +121,16 @@
                 </figure>
             </section>
         </div>
+
+    <!-- Modal -->
+
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img class="modal-content img-modal">
+        </div>
+    </div>
+
     </main>
 
     <footer>
@@ -145,6 +155,7 @@
         </div>
     </footer>
     <script src="/js/components.js"></script>
+    <script src="/js/modal.js"></script>
 </body>
 
 </html>
