@@ -173,6 +173,7 @@ input[type="search"] {
   left: 0.3rem;
   border-radius: 0%;
   -webkit-appearance: none;
+  margin-left: 1rem;
 }
 
 .arrow-wrap {
