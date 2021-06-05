@@ -5,8 +5,6 @@ let today = new Date();
 let currentMonth = today.getMonth();
 let currentYear = today.getFullYear();
 
-// const jump = document.querySelector(".jump-to-current");
-
 let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
 let monthAndYear = document.querySelector(".monthAndYear");
