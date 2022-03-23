@@ -23,11 +23,13 @@ A prototype of the website should be made using your chosen software (Adobe XD, 
 
 **Final Product:** 
 
-A URL and zip file with the final website should be submitted. The site should be tested on a variety of devices before final delivery. 
-The student has responsibility for setting up their own web host, or using Netlify to deploy the site. GitHub repositories should be set to private.
-Report: Submit a report discussing the design and technical aspects of the project, as well as how guidelines for WCAG, SEO and content management were handled. 
-A template for this report is provided under ‘Resources’.
-The duration of the Semester Project is 4 weeks.
+The site should be tested on a variety of devices before final delivery. 
+The student has responsibility for setting up their own web host, or using Netlify to deploy the site.
+
+**Report:**
+
+Submit a report discussing the design and technical aspects of the project, as well as how guidelines for WCAG, SEO and content management were handled. 
+A template for this report is provided under ‘Resources’. The duration of the Semester Project is 4 weeks.
 
 ## Requirements
 
@@ -54,3 +56,7 @@ Marking Criteria
     Can apply vocational knowledge to practical problems in web development with emphasis on design process, aesthetics and the use of HTML and CSS
     Masters industry-relevant tools, techniques and expressions in design process and development of websites in accordance with regulations and guidelines for universal design
     Can study and document his/her own work processes and identify design related issues and what measures needs to be implemented
+
+---
+
+### Grade: A
